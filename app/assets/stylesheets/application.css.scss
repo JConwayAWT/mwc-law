@@ -1,0 +1,309 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ @import url(http://fonts.googleapis.com/css?family=Raleway);
+ @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300);
+
+ html, body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Roboto', sans-serif;
+}
+
+nav.navbar{
+    background-color: #08274F;
+}
+
+.navbar{
+  margin-bottom: 0px;
+}
+
+.navbar-nav{
+  li{
+    a{
+      &:hover{
+        background-color:  #08274F;
+        color: #988AFF;
+      }
+    }
+  }
+}
+
+.navbar-toggle{
+  background-color: white;
+  border: thin solid gray;
+  .icon-bar{
+    background-color: rgb(102, 102, 102);
+  }
+}
+
+.raleway{
+  font-family: 'Raleway';
+  font-weight: 700;
+}
+
+#full-wrapper{
+  min-height: 100%;
+  position: relative;
+}
+
+#full-header{
+
+}
+
+#full-content{
+  padding-bottom: 90px;
+}
+
+#full-footer{
+  background-color: #eeeeee !important;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2000;
+}
+
+#no-border-radius{
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.black-navbar{
+  background-color: #000000;
+  border: none;
+  .white-right-border{
+    border-right: thin solid white;
+  }
+}
+
+#body-container{
+  a{
+    &:hover{
+      background-color: transparent;
+    }
+  }
+
+  .panel-default{
+    margin-bottom: 5px;
+  }
+
+  min-height: 72%;
+}
+
+#footer{
+  border-top: thin solid #cccccc;
+  .soft-gray-text{
+    color: #969696;
+  }
+  .small-text{
+    font-size: 11px;
+  }
+  .text-padded-top{
+    padding-top: 8px;
+  }
+}
+
+.royal-blue-backing{
+  background-color: #000052;
+}
+
+.mwc-logo-image{
+  height: 100px;
+}
+
+.mwc-logo-image-file{
+  height: 80px;
+  margin-top: 20px;
+}
+
+.underline-text{
+  text-align: center;
+  color: white;
+  font-size: 17px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.single-header-link{
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  color: white;
+}
+
+.mini-navbar{
+  min-height: inherit;
+}
+
+.sidebar{
+  background-color: black;
+  height: 100%;
+}
+
+// sidebar-related
+
+.general-wrapper{
+  padding-left: 250px;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #000;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-nav li {
+    text-indent: 20px;
+    line-height: 30px;
+}
+
+.sidebar-nav li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.first-sidebar-child{
+  margin-top: 35px;
+}
+
+.sidebar-nav li a:hover {
+    text-decoration: none;
+    color: #999999;
+    background-color: rgba(230, 230, 230, 0.2) !important;
+}
+
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+    text-decoration: none;
+}
+
+.sidebar-nav > .sidebar-brand {
+    height: 65px;
+    font-size: 18px;
+    line-height: 60px;
+}
+
+.sidebar-nav > .sidebar-brand a {
+    color: #999999;
+}
+
+.sidebar-nav > .sidebar-brand a:hover {
+    color: #fff;
+    background: none;
+}
+
+#wrapper {
+    padding-left: 250px;
+}
+
+#wrapper.toggled {
+    padding-left: 0;
+}
+
+#sidebar-wrapper {
+    width: 250px;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 0;
+}
+
+#page-content-wrapper {
+    padding: 20px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: relative;
+    margin-right: 0;
+}
+
+// double-lines
+
+.fancy {
+  line-height: 0.15;
+  text-align: center;
+  margin-bottom: 35px;
+}
+.fancy span {
+  display: inline-block;
+  position: relative;  
+}
+.fancy span:before,
+.fancy span:after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  top: 0;
+  width: 600px;
+}
+.fancy span:before {
+  right: 100%;
+  margin-right: 15px;
+}
+.fancy span:after {
+  left: 100%;
+  margin-left: 15px;
+}

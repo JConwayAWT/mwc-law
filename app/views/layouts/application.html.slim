@@ -1,0 +1,66 @@
+doctype html
+html
+  head
+    title MWC Law | Legal Representation for the Mortgage Banking Industry
+    = stylesheet_link_tag    'application', media: 'all'
+    = javascript_include_tag 'application'
+    = csrf_meta_tags
+
+    meta name="Description" content="McCabe, Weisberg, and Conway offers legal representation for the mortgage banking industry in the mid-Atlantic region."
+
+
+  body
+    #full-wrapper
+      #full-header
+        .row.headliner.royal-blue-backing
+          .mwc-logo-image.text-center
+            = image_tag "mwc-law-logo.png", class: "mwc-logo-image-file"
+          .underline-text Representing the mortgage banking industry in the mid-Atlantic region
+        nav.navbar.mini-navbar#no-border-radius.no-bottom-margin role="navigation"
+          .container-fluid
+            .container-header
+              button.navbar-toggle.collapsed type="button" data-toggle="collapse" data-target="#mwc-navbar"
+                span.sr-only Toggle Navigation
+                span.icon-bar
+                span.icon-bar
+                span.icon-bar
+
+            .navbar-collapse.collapse#mwc-navbar
+              ul.nav.navbar-nav.navbar-right
+                li
+                  a.single-header-link href="/whatever" About
+
+                li
+                  a.single-header-link href="/whateba" Offices
+
+                li
+                  a.single-header-link href="/whatebaa" Attorneys
+
+                li
+                  a.single-header-link href="/something" Affiliates
+
+                li 
+                  a.single-header-link href="/soemakdfj" Practice Areas
+
+                li
+                  a.single-header-link href="/afkaljd" Memberships
+
+                li
+                  a.single-header-link href="/careers" Careers
+
+                li 
+                  a.single-header-link href="/" Home
+
+      #full-content
+        .container#body-container
+          = yield
+
+      #full-footer
+        .footer#footer
+          .container
+            .row
+              .col-md-12
+                .text-center.soft-gray-text.small-text.text-padded-top
+                  | Portions of this site ©#{Time.now.year} by McCabe, Weisberg &amp; Conway, PC and McCabe, Weisberg &amp; Conway, LLC.
+                  br
+                  | 123 S. Broad Street, Suite 1400 - Philadelphia, PA 19109
