@@ -34,6 +34,6 @@ $(document).ready(function(){
     currentImageIndex = (currentImageIndex + 1) % nLocationImages;
     nextImageIndex = (currentImageIndex + 1) % nLocationImages;
 
-  }, 2000)
+  }, 6000)
 
 });
