@@ -30,19 +30,37 @@ h1, h2, h3, h4{
 }
 
 nav.navbar{
-    background-color: #08274F;
+    background-color: #020042;
+}
+
+p{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 17px;
 }
 
 .navbar{
   margin-bottom: 0px;
 }
 
+.soft-right{
+  padding-right: 50px;
+  border-left: 2px solid rgb(0, 14, 108);
+}
+
+h2.home-page{
+  color: rgb(0, 14, 108);
+  font-weight: 700;
+  font-size: 29px;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5)
+}
+
 .navbar-nav{
   li{
     a{
       &:hover{
-        background-color:  #08274F;
-        color: #988AFF;
+        background-color:  #030059;
+        color: white;
       }
     }
   }
@@ -82,6 +100,41 @@ nav.navbar{
   left: 0;
   width: 100%;
   z-index: 2000;
+}
+
+.home-page-image{
+  margin-left: -30px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.image-holder{
+  position: relative;
+}
+
+.text-backing{
+  position: absolute;
+  top: 210px;
+  text-align: center;
+  width: 100%;
+}
+
+.image-overlay-text{
+  color: white;
+  background: rgba(0, 0, 0, 0.85);
+  height: 40px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 27px;
+  font-weight: 100;
+}
+
+#new-york-image, #washington-dc-image,
+#new-jersey-image, #richmond-image{
+  display: none;
+}
+
+.location-image{ 
+  position: absolute;
 }
 
 #no-border-radius{
@@ -126,17 +179,8 @@ nav.navbar{
   }
 }
 
-.royal-blue-backing{
-  background-color: #000052;
-}
-
-.mwc-logo-image{
-  height: 100px;
-}
-
 .mwc-logo-image-file{
-  height: 80px;
-  margin-top: 20px;
+  height: 20px;
 }
 
 .underline-text{
@@ -148,18 +192,11 @@ nav.navbar{
 }
 
 .single-header-link{
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
   color: white;
 }
 
 .mini-navbar{
   min-height: inherit;
-}
-
-.sidebar{
-  background-color: black;
-  height: 100%;
 }
 
 // sidebar-related
@@ -306,4 +343,72 @@ nav.navbar{
 .fancy span:after {
   left: 100%;
   margin-left: 15px;
+}
+
+// equal row/col heights
+
+/* columns of same height styles */
+.container-xs-height {
+    display:table;
+    padding-left:0px;
+    padding-right:0px;
+}
+.row-xs-height {
+    display:table-row;
+}
+.col-xs-height {
+    display:table-cell;
+    float:none;
+}
+@media (min-width: 768px) {
+    .container-sm-height {
+        display:table;
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .row-sm-height {
+        display:table-row;
+    }
+    .col-sm-height {
+        display:table-cell;
+        float:none;
+    }
+}
+@media (min-width: 992px) {
+    .container-md-height {
+        display:table;
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .row-md-height {
+        display:table-row;
+    }
+    .col-md-height {
+        display:table-cell;
+        float:none;
+    }
+}
+@media (min-width: 1200px) {
+    .container-lg-height {
+        display:table;
+        padding-left:0px;
+        padding-right:0px;
+    }
+    .row-lg-height {
+        display:table-row;
+    }
+    .col-lg-height {
+        display:table-cell;
+        float:none;
+    }
+}
+/* vertical alignment styles */
+.col-top {
+    vertical-align:top;
+}
+.col-middle {
+    vertical-align:middle;
+}
+.col-bottom {
+    vertical-align:bottom;
 }

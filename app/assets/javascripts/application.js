@@ -17,12 +17,23 @@
 
 
 $(document).ready(function(){
-  $(".info-trigger").click(function(){
-    hideAll();
-    $($(this).data().show).show();
-  });
+  
+  // fade through location images
 
-  function hideAll(){
-    $(".hideable").hide();
-  }    
+  var nLocationImages = $(".location-image").length;
+  var currentImageIndex = nLocationImages - 1;
+  var nextImageIndex = 0;
+
+  setInterval(function(){
+    currentImage = $( $(".location-image")[currentImageIndex] );
+    nextImage = $( $(".location-image")[nextImageIndex] );
+
+    currentImage.fadeTo(1000, 0);
+    nextImage.fadeTo(1000, 1);
+
+    currentImageIndex = (currentImageIndex + 1) % nLocationImages;
+    nextImageIndex = (currentImageIndex + 1) % nLocationImages;
+
+  }, 2000)
+
 });

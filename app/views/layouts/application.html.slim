@@ -12,47 +12,29 @@ html
   body
     #full-wrapper
       #full-header
-        .row.headliner.royal-blue-backing
-          .mwc-logo-image.text-center
-            = image_tag "mwc-law-logo.png", class: "mwc-logo-image-file"
-          .underline-text Representing the mortgage banking industry in the mid-Atlantic region
-        nav.navbar.mini-navbar#no-border-radius.no-bottom-margin role="navigation"
+        nav.navbar#no-border-radius.no-bottom-margin role="navigation"
           .container-fluid
-            .container-header
+            .navbar-header
               button.navbar-toggle.collapsed type="button" data-toggle="collapse" data-target="#mwc-navbar"
                 span.sr-only Toggle Navigation
                 span.icon-bar
                 span.icon-bar
                 span.icon-bar
-
+              .navbar-brand
+                = image_tag "mwc-law-logo.png", class: "mwc-logo-image-file"
             .navbar-collapse.collapse#mwc-navbar
               ul.nav.navbar-nav.navbar-right
                 li
-                  a.single-header-link href="/" About
-
-                li
-                  a.single-header-link href="/" Offices
-
-                li
-                  a.single-header-link href="/" Attorneys
-
-                li
-                  a.single-header-link href="/" Affiliates
-
-                li 
-                  a.single-header-link href="/" Practice Areas
-
-                li
-                  a.single-header-link href="/" Memberships
-
-                li
-                  a.single-header-link href="/" Careers
-
-                li 
                   a.single-header-link href="/" Home
 
+                li
+                  a.single-header-link href="/attorneys" Attorneys
+
+                li
+                  a.single-header-link href="/affiliates" Affiliates
+
       #full-content
-        .container#body-container
+        .container-fluid#body-container
           = yield
 
       #full-footer
