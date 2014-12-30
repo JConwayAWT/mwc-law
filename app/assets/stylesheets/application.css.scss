@@ -59,6 +59,10 @@ h2.home-page{
 .navbar-nav{
   li{
     a{
+      @media (max-width: 1039px){
+        padding-left: 6px;
+        padding-right: 6px;
+      }
       &:hover{
         background-color:  #030059;
         color: white;
@@ -216,7 +220,12 @@ h2.home-page{
   color: white;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 17px;
+  @media (max-width: 1039px){
+    font-size: 13px;
+  }
+  @media (min-width: 1039px){
+    font-size: 17px;
+  }
   border-right: thin solid rgba(255, 255, 255, 0.3);
 }
 
