@@ -23,6 +23,7 @@
   margin: 0;
   padding: 0;
   height: 100%;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3, h4{
@@ -30,9 +31,7 @@ h1, h2, h3, h4{
 }
 
 nav.navbar{
-    background-color: #020042;
-    opacity: 0.8;
-    z-index: 200;
+    background-color: #030061;
 }
 
 p{
@@ -47,13 +46,14 @@ p{
 
 .soft-right{
   padding-right: 50px;
-  border-left: 2px solid rgb(0, 14, 108);
+  // border-left: 2px solid rgb(0, 14, 108);
 }
 
 h2.home-page{
   color: rgb(0, 14, 108);
   font-weight: 700;
   font-size: 29px;
+  border-bottom: thin solid black;
 }
 
 .navbar-nav{
@@ -64,7 +64,7 @@ h2.home-page{
         padding-right: 6px;
       }
       &:hover{
-        background-color:  #030059;
+        background-color:  #050089;
         color: white;
       }
     }
@@ -90,11 +90,14 @@ h2.home-page{
 }
 
 #full-header{
-
+  position: fixed;
+  width: 100%;
+  z-index: 1000000;
 }
 
 #full-content{
   padding-bottom: 90px;
+  padding-top: 50px
 }
 
 #full-footer{
@@ -108,19 +111,11 @@ h2.home-page{
 }
 
 .home-page-image{
-  margin-left: -30px;
-  /* MOZILLA IGNORE BELOW */
-  margin-top: -50px;
 
   z-index: 100;
   height: 330px;
   overflow: hidden;
 }
-  @-moz-document url-prefix(){
-    .home-page-image{
-      margin-top: 0px;
-    }
-  }
 
 .image-holder{
   position: relative;
@@ -167,6 +162,136 @@ h2.home-page{
 
 .padless{
   padding: 0px 0px;
+}
+
+.small-screen-row{
+  background-color: #dddddd;
+  height: 380px;
+  @media (min-width: 1189px){
+    display: none;
+  }
+  .box-area{
+    margin-top: 15px;
+    height: 350px;
+    width: 390px;
+    background-color: #aaaaaa;
+  }
+}
+
+.image-grid-row{
+  @media (max-width: 1188px){
+    display: none;
+  }
+  background-color: #dddddd;
+  height: 380px;
+  .box-area{
+    margin-top: 15px;
+    height: 350px;
+    width: 390px;
+    background-color: #aaaaaa;
+    .geographical-name-backing{
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 390px;
+      height: 42px;
+      position: absolute;
+      bottom: 0;
+      .geographical-name{
+        font-size: 23px;
+        font-family: 'Roboto';
+        color: white;
+        left: 10%;
+        font-weight: 700;
+        margin-top: 6px;
+      }
+    }
+  }
+}
+
+.clipped-image-grid-row{
+  height: 210px;
+}
+
+.clipped-box-area{
+  height: 180px !important;
+  overflow: hidden;
+}
+
+.attorney-row{
+  .attorneys{
+    color: black;
+    border-bottom: thin solid black;  
+  }
+  .single-attorney-link{
+    color: rgb(0, 97, 192);
+    margin-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+
+    .clickable{
+      cursor: pointer;
+
+      -webkit-transition: font-size 0.4s ease;
+      -moz-transition: font-size 0.4s ease;
+      -o-transition: font-size 0.4s ease;
+      transition: font-size 0.4s ease;
+
+      &:hover{
+        font-size: 17px;
+
+        -webkit-transition: font-size 0.4s ease;
+        -moz-transition: font-size 0.4s ease;
+        -o-transition: font-size 0.4s ease;
+        transition: font-size 0.4s ease;
+      }
+    }
+  }
+
+  #terrence-mccabe, #marc-weisberg,
+  #margaret-gairo, #lisa-wallace,
+  #laura-osullivan, #carol-cobb,
+  #janet-charlton{
+    display: none;
+  }
+}
+
+.office-row{
+  .offices{
+    color: black;
+    border-bottom: thin solid black;  
+  }
+  .single-office-link{
+    color: rgb(0, 97, 192);
+    margin-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+
+    .clickable{
+      cursor: pointer;
+
+      -webkit-transition: font-size 0.4s ease;
+      -moz-transition: font-size 0.4s ease;
+      -o-transition: font-size 0.4s ease;
+      transition: font-size 0.4s ease;
+
+      &:hover{
+        font-size: 17px;
+
+        -webkit-transition: font-size 0.4s ease;
+        -moz-transition: font-size 0.4s ease;
+        -o-transition: font-size 0.4s ease;
+        transition: font-size 0.4s ease;
+      }
+    }
+  }
+
+  #new-york, #new-jersey,
+  #long-island, #maryland,
+  #virginia, #district-of-columbia,
+  #delaware{
+    display: none;
+  }
 }
 
 #no-border-radius{
@@ -227,10 +352,13 @@ h2.home-page{
   color: white;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  @media (max-width: 1039px){
-    font-size: 13px;
+  @media (max-width: 900px){
+    font-size: 12px;
   }
-  @media (min-width: 1039px){
+  @media (min-width: 900px){
+    font-size: 15px;
+  }
+  @media (min-width: 1100px){
     font-size: 17px;
   }
   border-right: thin solid rgba(255, 255, 255, 0.3);

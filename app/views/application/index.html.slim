@@ -1,38 +1,61 @@
-.row.home-page-image
+/ .row.home-page-image
+/   .col-md-12.padless
+/     .image-holder
+/       = image_tag "newyorkcity2.png", id: "new-york-image", class: "location-image"
+/       = image_tag "washingtondc.png", id: "washington-dc-image", class: "location-image"
+/       = image_tag "newjersey.png", id: "new-jersey-image", class: "location-image"
+/       = image_tag "richmond.png", id: "richmond-image", class: "location-image"
+/       = image_tag "philadelphia.png", id: "philadelphia-image", class: "location-image"
+/     .text-backing
+/       .image-overlay-text Serving the mortgage banking industry in the mid-Atlantic region
+
+.row.padless.image-grid-row align="center"
+  .col-md-4.padless
+    .box-area
+      = image_tag "http://lorempixel.com/390/350/nature/1"
+      .geographical-name-backing
+        .geographical-name Pennsylvania
+
+  .col-md-4.padless
+    .box-area
+      = image_tag "http://lorempixel.com/390/350/nature/2"
+      .geographical-name-backing
+        .geographical-name New York
+        
+  .col-md-4.padless
+    .box-area
+      = image_tag "http://lorempixel.com/390/350/nature/3"
+      .geographical-name-backing
+        .geographical-name DC & Virginia
+
+.row.padless.small-screen-row align="center"
   .col-md-12.padless
-    .image-holder
-      = image_tag "newyorkcity2.png", id: "new-york-image", class: "location-image"
-      = image_tag "washingtondc.png", id: "washington-dc-image", class: "location-image"
-      = image_tag "newjersey.png", id: "new-jersey-image", class: "location-image"
-      = image_tag "richmond.png", id: "richmond-image", class: "location-image"
-      = image_tag "philadelphia.png", id: "philadelphia-image", class: "location-image"
-    .text-backing
-      .image-overlay-text Serving the mortgage banking industry in the mid-Atlantic region
-
-
+    .box-area.text-center
+      = image_tag "http://lorempixel.com/390/350/nature/4"
 
 .my-container.container-md-height
   .row.row-md-height
     .col-md-4.col-md-height.soft-right
-      h2.home-page Nullam ut Porta
+      h2.home-page The Firm
 
-      p Nullam et iaculis diam, et laoreet lorem. Aliquam venenatis mauris ut gravida viverra. Pellentesque porttitor nibh vitae tellus ultricies, sit amet gravida metus viverra. Maecenas tristique turpis sit amet massa dictum, id dignissim massa cursus. Sed eget lectus at dui volutpat dignissim eu efficitur sem. Integer tristique risus leo, in mollis velit ultrices ac.
-
-      .text-right
-        button.btn.btn-default.learn-more-button Learn More >
-
-    .col-md-4.col-md-height.soft-right
-      h2.home-page Maecenas Tristique
-
-      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut porta metus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin eu rutrum nibh, ac iaculis diam. Sed tincidunt hendrerit arcu ac aliquet. Nulla vel risus vitae justo mollis bibendum hendrerit sed lorem. Vestibulum porta id leo sed egestas. Aenean eu mollis odio. Ut luctus nisi vitae pharetra scelerisque.
+      p McCabe, Weisberg & Conway is an expanding regional firm representing mortgage lenders, banks, mortgage servicers, and financial institutions in Pennsylvania, New York, New Jersey, Delaware, Maryland, Virginia, and the District of Columbia.  Our attorneys have been committed for over 40 years to providing the most comprehensive and efficient legal representation available to the mortgage banking industry.
 
       .text-right
         button.btn.btn-default.learn-more-button Learn More >
 
     .col-md-4.col-md-height.soft-right
-      h2.home-page Volutpat Dignissim
+      h2.home-page Attorneys
 
-      p Vestibulum faucibus a ex sit amet imperdiet. Vivamus maximus vestibulum ullamcorper. Duis nibh felis, efficitur in lacus ut, laoreet euismod mauris. In non vulputate arcu. Nam lobortis a urna id molestie. Morbi elementum eros id mauris bibendum tincidunt.
+
+      p The firm was founded in 1973 by Terrence McCabe and Marc Weisberg, who met while working at a large national title insurance company.  They were later joined by Edward Conway, a seasoned litigator in lender liability and creditor's rights.  MWC now employs a diverse team of expert laywers, paralegals, and administrators knowledgeable in all areas of the mortgage banking industry, many of whom have more than 20 years of experience in this field.
+
+      .text-right
+        button.btn.btn-default.learn-more-button Learn More >
+
+    .col-md-4.col-md-height.soft-right
+      h2.home-page Practice Areas
+
+      p MWC has earned a reputation for excellence in concluding cases within client timelines throughout the Mid-Atlantic region.  The firm's experience and technology ensure the ability to handle even the highest volume of cases with accuracy and efficiency.  The legal team has significant expertise in foreclosure, bankruptcy, loss mitigation, and several other areas.  
 
       .text-right
         button.btn.btn-default.learn-more-button Learn More >

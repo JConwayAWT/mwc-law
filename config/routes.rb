@@ -7,6 +7,9 @@ Rails.application.routes.draw do
 
   root 'application#index'
 
+  match "/attorneys", to: "application#attorneys", via: :get
+  match "/offices", to: "application#offices", via: :get
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

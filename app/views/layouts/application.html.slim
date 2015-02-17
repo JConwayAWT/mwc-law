@@ -1,9 +1,10 @@
 doctype html
 html
   head
-    title MWC Law | Legal Representation for the Mortgage Banking Industry
+    title McCabe, Weisberg & Conway
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGKR61pjgohpnX79w-sFWXYXM29ZDh4M0"></script>
     = csrf_meta_tags
 
     meta name="Description" content="McCabe, Weisberg, and Conway offers legal representation for the mortgage banking industry in the mid-Atlantic region."
@@ -21,14 +22,13 @@ html
                 span.icon-bar
                 span.icon-bar
               .navbar-brand
-                = image_tag "mwc-law-logo.png", class: "mwc-logo-image-file"
+                = link_to "/"
+                  = image_tag "mwc-law-logo.png", class: "mwc-logo-image-file"
             .navbar-collapse.collapse#mwc-navbar
               ul.nav.navbar-nav.navbar-right
-                li
-                  a.single-header-link href="/" Home
 
                 li
-                  a.single-header-link href="/about" About
+                  a.single-header-link href="/the_firm" The Firm
 
                 li
                   a.single-header-link href="/offices" Offices
@@ -43,7 +43,10 @@ html
                   a.single-header-link href="/practice_areas" Practice Areas
 
                 li
-                  a.single-header-link href="/memberships" Memberships
+                  a.single-header-link href="/fannie_mae" Fannie Mae
+
+                li
+                  a.single-header-link href="/freddie_mac" Freddie Mac
 
                 li
                   a.single-header-link href="/careers" Careers

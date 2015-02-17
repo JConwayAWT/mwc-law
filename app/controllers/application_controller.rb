@@ -6,4 +6,10 @@ class ApplicationController < ActionController::Base
   def index
   end
 
+  def attorneys
+  end
+
+  def offices
+  end
+
 end
