@@ -1,0 +1,43 @@
+= render 'clipped_locations'
+
+.row.firm-row
+  .col-md-3.col-md-offset-1
+    .text-left
+      h2.firms The Firm
+      .single-firm-link 
+        span.clickable data-firm-section-id="overview" + Overview
+      .single-firm-link 
+        span.clickable data-firm-section-id="leadership" + Leadership
+      .single-firm-link 
+        span.clickable data-firm-section-id="efficiency" + Efficiency
+
+  .col-md-7
+    #overview.firm-section
+      h3 Overview
+      .firm-description
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In efficitur laoreet dictum. Duis feugiat iaculis blandit. Pellentesque venenatis egestas lectus a dictum. Fusce blandit libero justo, nec finibus ipsum egestas eu. Nulla facilisi. Aliquam aliquet placerat tellus, in mattis mi. Vivamus ut nulla malesuada, facilisis quam et, condimentum ligula.
+
+        p Duis ullamcorper, eros ac fermentum iaculis, turpis nisl congue orci, a efficitur arcu purus vitae nunc. Vestibulum euismod euismod dignissim. Etiam id hendrerit dui, dapibus consectetur orci. Nulla facilisi. Aenean nec luctus enim. Suspendisse quam massa, finibus vel urna nec, convallis vulputate justo. Proin interdum orci sit amet metus aliquet dapibus. Integer eu sapien quis justo consectetur blandit.
+
+    #leadership.firm-section
+      h3 Leadership
+      .firm-description
+        p Ut fringilla sem dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce in lectus non ante tempor lobortis. Vivamus vitae elementum nunc, ut volutpat lectus. Donec nulla quam, rhoncus id tincidunt vel, pulvinar quis turpis. Ut non hendrerit nisl, nec malesuada eros. Nullam maximus eu lectus ac mattis. Etiam semper erat in aliquet lobortis. Sed vel nibh in nisl semper pretium. Vestibulum convallis gravida arcu, eget pretium metus ultrices quis. Cras vel lobortis ligula. Cras dapibus risus eu justo lacinia, in interdum turpis dignissim. Sed leo nisl, pretium vitae elit sit amet, vestibulum accumsan lectus.
+
+        p Integer facilisis augue quam, et convallis erat rutrum vel. Cras non bibendum urna. Morbi ex tellus, sollicitudin a arcu quis, lobortis suscipit mi. Donec lacinia sagittis turpis sed pellentesque. Donec sodales sapien in diam faucibus lobortis. Mauris vel tincidunt dui. Etiam egestas orci in massa vehicula hendrerit.
+
+    #efficiency.firm-section
+      h3 Efficiency
+      .firm-description
+        p Mauris eget nunc eu justo gravida ultricies. Aliquam pellentesque convallis eleifend. Vivamus ac ultricies ante. Proin at elit eget orci ullamcorper dignissim. Fusce nec nulla odio. Aenean eu purus sit amet purus pharetra porta at sagittis eros. Praesent consectetur sagittis sagittis. Praesent sed posuere nulla. Etiam efficitur iaculis augue, id ullamcorper nisl lobortis et. Donec porttitor arcu at libero vulputate facilisis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur sit amet gravida dui. Maecenas congue id mi a lobortis. Etiam ut neque eget nisl sodales mollis. Donec faucibus augue a dapibus volutpat. Integer eu mauris nulla.
+
+        p Aliquam vestibulum nisl at quam dapibus tempor. Donec luctus hendrerit purus, sit amet gravida sem feugiat sit amet. Pellentesque vitae erat leo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse rutrum ullamcorper urna vel sollicitudin. Praesent vel nisl vel neque dictum ultrices. Duis in eros ligula. Proin sed ipsum quis diam faucibus malesuada ac non neque. Aliquam porttitor purus sit amet ipsum pellentesque varius. Donec mollis convallis ante at placerat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+
+javascript:
+  $(document).ready(function(){
+    $(".clickable").click(function(){
+      var desired_section = "#" + $(this).data().firmSectionId;
+      $(".firm-section").hide();
+      $(desired_section).show();
+    });
+  });

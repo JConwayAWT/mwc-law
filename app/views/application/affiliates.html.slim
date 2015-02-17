@@ -1,0 +1,34 @@
+= render 'clipped_locations'
+
+.row.affiliate-row
+  .col-md-3.col-md-offset-1
+    .text-left
+      h2.affiliates Affiliates
+      .single-affiliate-link 
+        span.clickable data-affiliate-section-id="reoaa" + REO Abstract America
+      .single-affiliate-link 
+        span.clickable data-affiliate-section-id="aoss" + Attorney Outsourcing Support Services
+
+  .col-md-7
+    #reoaa.affiliate-section
+      h3 REO Abstract America, Inc.
+      .affiliate-description
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In efficitur laoreet dictum. Duis feugiat iaculis blandit. Pellentesque venenatis egestas lectus a dictum. Fusce blandit libero justo, nec finibus ipsum egestas eu. Nulla facilisi. Aliquam aliquet placerat tellus, in mattis mi. Vivamus ut nulla malesuada, facilisis quam et, condimentum ligula.
+
+        p Duis ullamcorper, eros ac fermentum iaculis, turpis nisl congue orci, a efficitur arcu purus vitae nunc. Vestibulum euismod euismod dignissim. Etiam id hendrerit dui, dapibus consectetur orci. Nulla facilisi. Aenean nec luctus enim. Suspendisse quam massa, finibus vel urna nec, convallis vulputate justo. Proin interdum orci sit amet metus aliquet dapibus. Integer eu sapien quis justo consectetur blandit.
+
+    #aoss.affiliate-section
+      h3 Attorney Outsourcing Support Services, Inc.
+      .affiliate-description
+        p Ut fringilla sem dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce in lectus non ante tempor lobortis. Vivamus vitae elementum nunc, ut volutpat lectus. Donec nulla quam, rhoncus id tincidunt vel, pulvinar quis turpis. Ut non hendrerit nisl, nec malesuada eros. Nullam maximus eu lectus ac mattis. Etiam semper erat in aliquet lobortis. Sed vel nibh in nisl semper pretium. Vestibulum convallis gravida arcu, eget pretium metus ultrices quis. Cras vel lobortis ligula. Cras dapibus risus eu justo lacinia, in interdum turpis dignissim. Sed leo nisl, pretium vitae elit sit amet, vestibulum accumsan lectus.
+
+        p Integer facilisis augue quam, et convallis erat rutrum vel. Cras non bibendum urna. Morbi ex tellus, sollicitudin a arcu quis, lobortis suscipit mi. Donec lacinia sagittis turpis sed pellentesque. Donec sodales sapien in diam faucibus lobortis. Mauris vel tincidunt dui. Etiam egestas orci in massa vehicula hendrerit.
+
+javascript:
+  $(document).ready(function(){
+    $(".clickable").click(function(){
+      var desired_section = "#" + $(this).data().affiliateSectionId;
+      $(".affiliate-section").hide();
+      $(desired_section).show();
+    });
+  });

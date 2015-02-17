@@ -294,6 +294,116 @@ h2.home-page{
   }
 }
 
+.firm-row{
+  .firms{
+    color: black;
+    border-bottom: thin solid black;  
+  }
+  .single-firm-link{
+    color: rgb(0, 97, 192);
+    margin-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+
+    .clickable{
+      cursor: pointer;
+
+      -webkit-transition: font-size 0.4s ease;
+      -moz-transition: font-size 0.4s ease;
+      -o-transition: font-size 0.4s ease;
+      transition: font-size 0.4s ease;
+
+      &:hover{
+        font-size: 17px;
+
+        -webkit-transition: font-size 0.4s ease;
+        -moz-transition: font-size 0.4s ease;
+        -o-transition: font-size 0.4s ease;
+        transition: font-size 0.4s ease;
+      }
+    }
+  }
+
+  #efficiency, #leadership{
+    display: none;
+  }
+}
+
+.affiliate-row{
+  .affiliates{
+    color: black;
+    border-bottom: thin solid black;  
+  }
+  .single-affiliate-link{
+    color: rgb(0, 97, 192);
+    margin-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+
+    .clickable{
+      cursor: pointer;
+
+      -webkit-transition: font-size 0.4s ease;
+      -moz-transition: font-size 0.4s ease;
+      -o-transition: font-size 0.4s ease;
+      transition: font-size 0.4s ease;
+
+      &:hover{
+        font-size: 17px;
+
+        -webkit-transition: font-size 0.4s ease;
+        -moz-transition: font-size 0.4s ease;
+        -o-transition: font-size 0.4s ease;
+        transition: font-size 0.4s ease;
+      }
+    }
+  }
+
+  #aoss{
+    display: none;
+  }
+}
+
+.practice-area-row{
+  .practice-areas{
+    color: black;
+    border-bottom: thin solid black;  
+  }
+  .single-practice-area-link{
+    color: rgb(0, 97, 192);
+    margin-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+
+
+    .clickable{
+      cursor: pointer;
+
+      -webkit-transition: font-size 0.4s ease;
+      -moz-transition: font-size 0.4s ease;
+      -o-transition: font-size 0.4s ease;
+      transition: font-size 0.4s ease;
+
+      &:hover{
+        font-size: 17px;
+
+        -webkit-transition: font-size 0.4s ease;
+        -moz-transition: font-size 0.4s ease;
+        -o-transition: font-size 0.4s ease;
+        transition: font-size 0.4s ease;
+      }
+    }
+  }
+
+  #bankruptcy, #loss-mitigation,
+  #evictions, #reo-services,
+  #litigation, #title-insurance-services{
+    display: none;
+  }
+}
+
 #no-border-radius{
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
@@ -588,4 +698,8 @@ h2.home-page{
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   border-color: #bbbbbb;
+  .learn-more-link{
+    color: black;
+    text-decoration: none;
+  }
 }

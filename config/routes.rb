@@ -9,6 +9,11 @@ Rails.application.routes.draw do
 
   match "/attorneys", to: "application#attorneys", via: :get
   match "/offices", to: "application#offices", via: :get
+  match "/the_firm", to: "application#the_firm", via: :get
+  match "/affiliates", to: "application#affiliates", via: :get
+  match "/practice_areas", to: "application#practice_areas", via: :get
+  match "/fannie_mae", to: "application#fannie_mae", via: :get
+  match "/freddie_mac", to: "application#freddie_mac", via: :get
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
