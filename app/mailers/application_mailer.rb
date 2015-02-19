@@ -7,8 +7,6 @@ class ApplicationMailer < ActionMailer::Base
   def new_employment_application(application_id)
     @app = EmploymentApplication.find(application_id)
 
-    debugger 
-
     if @app.resume.exists?
       attachments[@app.resume.instance.resume_file_name] = File.read(@app.resume.path)
     end
