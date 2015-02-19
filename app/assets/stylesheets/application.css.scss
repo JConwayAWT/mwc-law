@@ -46,7 +46,12 @@ p{
 
 .soft-right{
   padding-right: 50px;
-  // border-left: 2px solid rgb(0, 14, 108);
+}
+
+a{
+  &:hover{
+    background-color: transparent;
+  }
 }
 
 h2.home-page{
@@ -404,6 +409,55 @@ h2.home-page{
   }
 }
 
+.new-alert-row{
+  .new-alerts{
+    color: black;
+    border-bottom: thin solid black;  
+  }
+
+  .form-top{
+    padding-top: 27px;
+  }
+}
+
+.career-row{
+  .careers{
+    color: black;
+    border-bottom: thin solid black;  
+  }
+
+  .form-top{
+    padding-top: 27px;
+  }
+
+  .disclaimer{
+    font-size: 12px;
+    padding-top: 39px;
+    padding-bottom: 20px;
+  }
+}
+
+.error-row{
+  background-color: rgb(255, 132, 132);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.sitewide-alert-row{
+  background-color: rgb(255, 132, 132);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .sitewide-alert-text{
+    p{
+      font-size: 14px;
+    }
+  }
+}
+
+.delete-alerts-form-top{
+  padding-top: 38px;
+}
+
 #no-border-radius{
   border-bottom-left-radius: 0px;
   border-top-left-radius: 0px;
@@ -448,6 +502,9 @@ h2.home-page{
 
 .mwc-logo-image-file{
   height: 20px;
+  &:hover{
+    text-decoration: none;
+  }
 }
 
 .underline-text{
@@ -460,6 +517,9 @@ h2.home-page{
 
 .single-header-link{
   color: white;
+  &:visited{
+    color: white;
+  }
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   @media (max-width: 900px){

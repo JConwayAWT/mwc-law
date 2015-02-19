@@ -1,0 +1,28 @@
+= render 'clipped_locations'
+
+.row.career-row
+  .col-md-3.col-md-offset-1
+    .text-left
+      h2.careers Careers
+
+  .col-md-5
+    .disclaimer
+      | It is the policy of McCabe, Weisberg and Conway not to discriminate against any employee or applicant for employment because of race, color, religion, sex, national origin, age, marital status, genetic information, disability or because he or she is a protected veteran. It is also the policy of McCabe, Weisberg and Conway to take affirmative action to employ and to advance in employment all persons regardless of race, color, religion, sex, national origin, age, marital status, genetic information, disability or protected veteran status and to base all employment decisions only on valid job requirements.
+      br
+      br
+      | Please use the form below to indicate your area of interest and desired office location.  
+    = form_for(EmploymentApplication.new) do |f|
+      .form-group
+        = f.text_field :name, autofocus: true, placeholder: "Your name", required: true, class: "form-control"
+      .form-group
+        = f.email_field :email, placeholder: "Your email address", class: 'form-control'
+      .form-group
+        = f.text_area :message, placeholder: "Let us know why you're applying and what position you're interested in.", rows: 4, class: "form-control"
+      .form-group
+        = f.label "Location"
+        = f.select :office_location, @offices, {selected: @offices.first}, class: "form-control"
+      .form-group
+        = f.label "Please upload your resume"
+        = f.file_field :resume, class: "form-control"
+      .text-right
+        = f.submit "Submit application", class: "btn btn-primary"

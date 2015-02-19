@@ -1,0 +1,6 @@
+toolbar:
+  - bold italic | link | undo redo
+plugins:
+  - link
+mode:
+  - specific_textareas

@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :employment_applications
+
+  match "/alerts/delete", to: "alerts#delete", via: :get
+  resources :alerts
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -14,6 +19,7 @@ Rails.application.routes.draw do
   match "/practice_areas", to: "application#practice_areas", via: :get
   match "/fannie_mae", to: "application#fannie_mae", via: :get
   match "/freddie_mac", to: "application#freddie_mac", via: :get
+  match "/delete_alerts", to: "alerts#delete_alerts", via: :post
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

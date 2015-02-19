@@ -16,3 +16,10 @@
       = image_tag "http://lorempixel.com/390/350/nature/3"
       .geographical-name-backing
         .geographical-name DC & Virginia
+
+- if flash["alert"]
+  .row.padless.error-row
+    .col-md-12.padless
+      .text-center
+        b Error: 
+        | #{flash["alert"]}

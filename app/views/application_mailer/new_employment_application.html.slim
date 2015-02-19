@@ -1,0 +1,31 @@
+p Hello,
+
+p There is a new employment application for you from www.mwc-law.com.  Please find the information below:
+
+p
+  b Name:
+  br #{@app.name.blank? ? "N/A" : @app.name}
+
+p
+  b Email
+  br #{@app.email.blank? ? "N/A" : @app.email}
+
+p
+  b Office Location
+  br #{@app.office_location.blank? ? "N/A" : @app.office_location}
+
+p
+  b Message
+  br #{@app.message.blank? ? "N/A" : @app.message.gsub("\r\n","<br>").gsub("\n","<br>").html_safe}
+
+- if @app.resume.exists?
+  p
+    b Please download the attached file to view this candidate's resume.
+- else
+  p
+    b This candidate did not upload a resume.
+
+p Thank you,
+br
+br
+p MWC Law
