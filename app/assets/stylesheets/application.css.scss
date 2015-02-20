@@ -154,6 +154,40 @@ h2.home-page{
   padding-top: 5px;
 }
 
+.size-force{
+  height: 350px;
+  width: 390px;
+}
+
+.middle{
+  position: absolute;
+  top: 15px;
+}
+
+.bottom{
+  position: absolute;
+  top: 15px;
+}
+
+.clipped-image-fade{
+  margin-top: -100px;
+}
+
+.no-overflow{
+  overflow: hidden;
+}
+
+.image-fade img{
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.image-fade img.transparent{
+  opacity: 0;
+}
+
 #new-york-image, #washington-dc-image,
 #new-jersey-image, #richmond-image{
   display: none;
@@ -195,7 +229,7 @@ h2.home-page{
     width: 390px;
     background-color: #aaaaaa;
     .geographical-name-backing{
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, 0.8);
       width: 390px;
       height: 42px;
       position: absolute;
@@ -439,6 +473,12 @@ h2.home-page{
 
 .error-row{
   background-color: rgb(255, 132, 132);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.notice-row{
+  background-color: #849DFF;
   padding-top: 10px;
   padding-bottom: 10px;
 }

@@ -41,14 +41,14 @@ class EmploymentApplicationsController < ApplicationController
         ApplicationMailer.new_employment_application(@employment_application.id).deliver!
 
         # destroy their resume to save space on the machine
-        # @employment_application.resume.destroy
-        # @employment_application.resume.clear
-        # @employment_application.save
+        @employment_application.resume.destroy
+        @employment_application.resume.clear
+        @employment_application.save
 
         format.html { redirect_to "/", notice: 'Your employment application was received.  We will contact you shortly if we choose to proceed with your application.' }
         format.json { render :show, status: :created, location: @employment_application }
       else
-        format.html { render :new }
+        format.html { render :new, alert: 'There was an error while processing your application.  Please try again.' }
         format.json { render json: @employment_application.errors, status: :unprocessable_entity }
       end
     end
