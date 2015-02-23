@@ -60,6 +60,22 @@
       .text-right
         = button_to "Learn More >", "/practice_areas", class: "btn btn-default learn-more-button", method: :get
 
+hr
+
+.row
+  .col-md-8.col-md-offset-2.like-table-column
+    .affiliation-image-container
+      = image_tag "american_bar_association.jpg", class: "affiliation-image"
+
+    .affiliation-image-container
+      = image_tag "american_legal_and_financial_network.jpg", class: "affiliation-image"
+
+    .affiliation-image-container
+      = image_tag "reomac.jpg", class: "affiliation-image", class: "affiliation-image", style: "width: 50%;"
+
+    .affiliation-image-container
+      = image_tag "mortgage_bankers_association.jpg", class: "affiliation-image"
+
 javascript:
   $(document).ready(function(){
     var NUMBER_OF_IMAGES = 3;
