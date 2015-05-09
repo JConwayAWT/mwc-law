@@ -18,6 +18,7 @@
  @import "bootstrap";
  @import url(http://fonts.googleapis.com/css?family=Raleway);
  @import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300);
+ @import url(http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700,300);
 
  html, body{
   margin: 0;
@@ -31,7 +32,18 @@ h1, h2, h3, h4{
 }
 
 nav.navbar{
-    background-color: #030061;
+    //background-color: rgb( 4, 51, 77 );
+    background: linear-gradient( rgb(0, 78, 135), rgb(0, 53, 93) );
+    height: 130px;
+}
+
+.gray-bottom-border{
+  border-bottom: 5px solid rgb(200, 199, 195);
+}
+
+.ep-padding{
+  padding-left: 8%;
+  padding-right: 8%;
 }
 
 p{
@@ -61,16 +73,61 @@ h2.home-page{
   border-bottom: thin solid black;
 }
 
+.home-page-sections-top-padding{
+  padding-top: 10px;
+}
+
+.home-play{
+  font-size: 8pt;
+  padding-left: 3px;
+  vertical-align: middle;
+}
+
+.learn-more-tag{
+  font-family: "Open Sans Condensed";
+  font-size: 12pt;
+  font-weight: 600;
+  color: #00355c;
+  font-style: italic;
+}
+
+.learn-more-text{
+  vertical-align: middle;
+}
+
+.home-page-text{
+  font-family: 'Raleway';
+  font-weight: 300;
+  font-size: 10pt;
+  color: rgb(51, 159, 216);
+}
+
+.home-page-section-header{
+  color: #00355c;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: "Open Sans Condensed", sans-serif;
+}
+
 .navbar-nav{
   li{
+
     a{
       @media (max-width: 1039px){
         padding-left: 6px;
         padding-right: 6px;
       }
+
+      color: white;
+
+      -webkit-transition: color 250ms ease-in-out;
+      -moz-transition: color 250ms ease-in-out;
+      -o-transition: color 250ms ease-in-out;
+      transition: color 250ms ease-in-out;
+
       &:hover{
-        background-color:  #050089;
-        color: white;
+        background-color:  transparent;
+        color: rgb(170, 160, 255);
       }
     }
   }
@@ -102,7 +159,7 @@ h2.home-page{
 
 #full-content{
   padding-bottom: 90px;
-  padding-top: 50px
+  padding-top: 130px
 }
 
 #full-footer{
@@ -116,10 +173,15 @@ h2.home-page{
 }
 
 .home-page-image{
-
   z-index: 100;
   height: 330px;
   overflow: hidden;
+}
+
+.hero-image{
+  max-width: 100%;
+  height: auto;
+  overflow-x: hidden;
 }
 
 .image-holder{
@@ -555,7 +617,7 @@ h2.home-page{
 }
 
 .mwc-logo-image-file{
-  height: 20px;
+  height: 102px;
   &:hover{
     text-decoration: none;
   }
@@ -569,23 +631,25 @@ h2.home-page{
   margin-bottom: 20px;
 }
 
+#navbar-link-margin{
+  margin-top: 84px;
+}
+
 .single-header-link{
   color: white;
   &:visited{
     color: white;
   }
   font-family: 'Raleway', sans-serif;
-  font-weight: 700;
   @media (max-width: 900px){
-    font-size: 12px;
+    font-size: 10px;
   }
   @media (min-width: 900px){
-    font-size: 15px;
+    font-size: 12px;
   }
-  @media (min-width: 1100px){
-    font-size: 17px;
+  @media (min-width: 1139px){
+    font-size: 14px;
   }
-  border-right: thin solid rgba(255, 255, 255, 0.3);
 }
 
 .mini-navbar{

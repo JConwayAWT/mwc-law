@@ -2,19 +2,18 @@ doctype html
 html
   head
     title McCabe, Weisberg & Conway
-    = stylesheet_link_tag    'application', media: 'all'
-    = javascript_include_tag 'application'
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGKR61pjgohpnX79w-sFWXYXM29ZDh4M0"></script>
+    = stylesheet_link_tag     'application', media: 'all'
+    = javascript_include_tag  'application'
+    script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGKR61pjgohpnX79w-sFWXYXM29ZDh4M0"
     = csrf_meta_tags
 
     meta name="Description" content="McCabe, Weisberg, and Conway offers legal representation for the mortgage banking industry in the mid-Atlantic region."
 
-
   body
     #full-wrapper
       #full-header
-        nav.navbar#no-border-radius.no-bottom-margin role="navigation"
-          .container-fluid
+        nav.navbar#no-border-radius.gray-bottom-border role="navigation"
+          .container-fluid.ep-padding
             .navbar-header
               button.navbar-toggle.collapsed type="button" data-toggle="collapse" data-target="#mwc-navbar"
                 span.sr-only Toggle Navigation
@@ -23,44 +22,35 @@ html
                 span.icon-bar
               .navbar-brand
                 = link_to "/", class: "mwc-logo-link"
-                  = image_tag "mwc-law-logo.png", class: "mwc-logo-image-file"
+                  = image_tag "mwc-logo-vector-transparent.png", class: "mwc-logo-image-file"
             .navbar-collapse.collapse#mwc-navbar
-              ul.nav.navbar-nav.navbar-right
-
+              ul.nav.navbar-nav.navbar-right#navbar-link-margin
                 li
                   a.single-header-link href="/the_firm" The Firm
-
                 li
                   a.single-header-link href="/offices" Offices
-
                 li
                   a.single-header-link href="/attorneys" Attorneys
-
                 li
                   a.single-header-link href="/affiliates" Affiliates
-
                 li
                   a.single-header-link href="/practice_areas" Practice Areas
-
                 li
                   a.single-header-link href="/fannie_mae" Fannie Mae
-
                 li
                   a.single-header-link href="/freddie_mac" Freddie Mac
-
                 li
                   a.single-header-link href="/employment_applications" Careers
-
-
 
       #full-content
         .container-fluid#body-container
           - if Alert.any?
             .row.padless.sitewide-alert-row
-              .col-md-8.col-md-offset-2.padless
+              .col-md8.col-md-offset-2.padless
                 - Alert.all.each do |alert|
                   b Notice: 
                   .sitewide-alert-text = simple_format(alert.body.html_safe)
+
           = yield
 
       #full-footer
@@ -68,7 +58,26 @@ html
           .container
             .row
               .col-md-12
-                .text-center.soft-gray-text.small-text.text-padded-top
-                  | Portions of this site ©#{Time.now.year} by McCabe, Weisberg &amp; Conway, PC and McCabe, Weisberg &amp; Conway, LLC.
-                  br
-                  | 123 S. Broad Street, Suite 1400 - Philadelphia, PA 19109
+                .text-center Hello, world.
+
+
+
+/       #full-content
+/         .container-fluid#body-container
+/           - if Alert.any?
+/             .row.padless.sitewide-alert-row
+/               .col-md-8.col-md-offset-2.padless
+/                 - Alert.all.each do |alert|
+/                   b Notice: 
+/                   .sitewide-alert-text = simple_format(alert.body.html_safe)
+/           = yield
+
+/       #full-footer
+/         .footer#footer
+/           .container
+/             .row
+/               .col-md-12
+/                 .text-center.soft-gray-text.small-text.text-padded-top
+/                   | Portions of this site ©#{Time.now.year} by McCabe, Weisberg &amp; Conway, PC and McCabe, Weisberg &amp; Conway, LLC.
+/                   br
+/                   | 123 S. Broad Street, Suite 1400 - Philadelphia, PA 19109
