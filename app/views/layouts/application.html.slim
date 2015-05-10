@@ -55,29 +55,64 @@ html
 
       #full-footer
         .footer#footer
-          .container
-            .row
-              .col-md-12
-                .text-center Hello, world.
+          .container-fluid
+            .row.ep-padding.soft-top-space
+              .col-md-8
+                .row.paddless
+                  .col-md-12.padless
+                    = image_tag "american_bar_association.png", id: "american_bar_association", class: "association-image"
+                    = image_tag "american_legal_and_financial_network.png", id: "american_legal_and_financial_network", class: "association-image"
+                    = image_tag "reo_mac.png", id: "reo_mac", class: "association-image"
+                    = image_tag "mortgage_bankers_association.png", id: "mortgage_bankers_association", class: "association-image"
+                .row.padless
+                  .col-md-12.padless
+                    p.disclaimer Portions of this site ©2015 by McCabe, Weisberg & Conway, PC and McCabe, Weisberg & Conway, LLC.  123 S. Broad Street, Suite 1400 - Philadelphia, PA 19109
+              .col-md-4
+                .row.padless
+                  / main office address
+                  .col-md-4.padless style="padding-right: 10px"
+                    .philadelphia-address-text 
+                      span#philadelphia-header PHILADELPHIA
+                      br
+                      | 123 S Broad Street,
+                      br
+                      | Suite 1400
+                      br
+                      | Philadelphia, PA 19109
+                  / map itself
+                  .col-md-8.padless.location-images
+                    = link_to image_tag( "philadelphia_location.png", class: "location-image displaying", id: "philadelphia_location" ), "https://www.google.com/maps/place/123+S+Broad+St,+Philadelphia,+PA+19109/@39.95009,-75.164017,16z/data=!4m2!3m1!1s0x89c6c62f8f06c421:0xffd964938939d8d?hl=en-US"
+                    = link_to image_tag( "new_york_location.png", class: "location-image", id: "new_york_location" ), "https://www.google.com/maps/place/145+Huguenot+St,+New+Rochelle,+NY+10801/@40.913467,-73.779503,16z/data=!4m2!3m1!1s0x89c28d91d78f391d:0xac714662af04e284?hl=en-US"
+                    = link_to image_tag( "long_island_location.png", class: "location-image", id: "long_island_location" ), "https://www.google.com/maps/place/1+Huntington+Quadrangle,+Melville,+NY+11747/@40.77303,-73.420608,16z/data=!4m2!3m1!1s0x89e82a35a87e2693:0xfcc10d82df65df6?hl=en-US"
+                    // note that maryland and dc share the same office basically
+                    = link_to image_tag( "dc_location.png", class: "location-image", id: "dc_location" ), "https://www.google.com/maps/place/312+Marshall+Ave,+Laurel+Centre+Mall+Shopping+Center,+Laurel,+MD+20707/@39.097556,-76.852788,16z/data=!4m2!3m1!1s0x89b7dd13a5724af9:0xdf14c9c4cfccc9dc?hl=en-US"
+                    = link_to image_tag( "dc_location.png", class: "location-image", id: "maryland_location" ), "https://www.google.com/maps/place/312+Marshall+Ave,+Laurel+Centre+Mall+Shopping+Center,+Laurel,+MD+20707/@39.097556,-76.852788,16z/data=!4m2!3m1!1s0x89b7dd13a5724af9:0xdf14c9c4cfccc9dc?hl=en-US"
+                    = link_to image_tag( "virginia_location.png", class: "location-image", id: "virginia_location" ), "https://www.google.com/maps/place/722+E+Market+St,+Leesburg,+VA+20176/@39.106595,-77.547086,16z/data=!4m2!3m1!1s0x89b63d7629212997:0x6209b55c8b32213e?hl=en-US"
+                    = link_to image_tag( "delaware_location.png", class: "location-image", id: "delaware_location" ), "https://www.google.com/maps/place/1+Righter+Pkwy,+Wilmington,+DE+19803/@39.814342,-75.551268,16z/data=!4m2!3m1!1s0x89c6fb5d8889f681:0xf671bc0baa850411?hl=en-US"
+                    = link_to image_tag( "new_jersey_location.png", class: "location-image", id: "new_jersey_location" ), "https://www.google.com/maps/place/216+Haddon+Ave,+Westmont,+NJ+08108/@39.908894,-75.047669,16z/data=!4m2!3m1!1s0x89c6cbf0cb4c5f49:0x7dd3458f9bf305a6?hl=en-US"
+                .row.padless
+                  / location selectors
+                  .col-md-8.col-md-offset-4.padless
+                    span.location-text LOCATION:
+                    span.location-option#selected data-file-name="philadelphia_location" PA
+                    span.location-option data-file-name="new_york_location" NY
+                    span.location-option data-file-name="long_island_location" NYC
+                    span.location-option data-file-name="dc_location" DC
+                    span.location-option data-file-name="maryland_location" MD
+                    span.location-option data-file-name="virginia_location" VA
+                    span.location-option data-file-name="delaware_location" DE
+                    span.location-option data-file-name="new_jersey_location" NJ
 
+javascript:
+  $(document).ready(function(){
+    $(".location-option").click(function(){
+      $("#selected").removeAttr("id");
+      $(this).attr("id", "selected");
 
+      current_file_name = $(this).data().fileName;
 
-/       #full-content
-/         .container-fluid#body-container
-/           - if Alert.any?
-/             .row.padless.sitewide-alert-row
-/               .col-md-8.col-md-offset-2.padless
-/                 - Alert.all.each do |alert|
-/                   b Notice: 
-/                   .sitewide-alert-text = simple_format(alert.body.html_safe)
-/           = yield
+      $(".location-images").find(".displaying").removeClass("displaying");
+      $(".location-images").find("#" + current_file_name).addClass("displaying");
 
-/       #full-footer
-/         .footer#footer
-/           .container
-/             .row
-/               .col-md-12
-/                 .text-center.soft-gray-text.small-text.text-padded-top
-/                   | Portions of this site ©#{Time.now.year} by McCabe, Weisberg &amp; Conway, PC and McCabe, Weisberg &amp; Conway, LLC.
-/                   br
-/                   | 123 S. Broad Street, Suite 1400 - Philadelphia, PA 19109
+    });
+  });

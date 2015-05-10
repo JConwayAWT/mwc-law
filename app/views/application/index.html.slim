@@ -13,14 +13,25 @@
     .text-center.home-page-section-header PRACTICE AREAS
     p.home-page-text MWC has earned a reputation for excellence in concluding cases within client timelines throughout the Mid-Atlantic region.  The firm's experience and technology ensure the ability to handle even the highest volume of cases with accuracy and efficiency.  The legal team has significant expertise in foreclosure, bankruptcy, loss mitigation, and several other areas.
 
-.row.ep-padding
+.row.ep-padding style="padding-bottom: 50px;"
   .col-md-4
     .text-center
       .learn-more-tag
-        span.learn-more-text Learn more
+        span.learn-more-text 
+          = link_to "Learn More", "/the_firm"
         span.glyphicon.glyphicon-play.home-play
   .col-md-4
+    .text-center
+      .learn-more-tag
+        span.learn-more-text 
+          = link_to "Learn More", "/attorneys"
+        span.glyphicon.glyphicon-play.home-play
   .col-md-4
+    .text-center
+      .learn-more-tag
+        span.learn-more-text 
+          = link_to "Learn More", "/practice_areas"
+        span.glyphicon.glyphicon-play.home-play
 
 / .row.padless.image-grid-row align="center"
 /   .col-md-4.padless

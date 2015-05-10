@@ -21,20 +21,20 @@ $(document).ready(function(){
   
   // fade through location images
 
-  var nLocationImages = $(".location-image").length;
-  var currentImageIndex = nLocationImages - 1;
-  var nextImageIndex = 0;
+  // var nLocationImages = $(".location-image").length;
+  // var currentImageIndex = nLocationImages - 1;
+  // var nextImageIndex = 0;
 
-  setInterval(function(){
-    currentImage = $( $(".location-image")[currentImageIndex] );
-    nextImage = $( $(".location-image")[nextImageIndex] );
+  // setInterval(function(){
+  //   currentImage = $( $(".location-image")[currentImageIndex] );
+  //   nextImage = $( $(".location-image")[nextImageIndex] );
 
-    currentImage.fadeTo(1000, 0);
-    nextImage.fadeTo(1000, 1);
+  //   currentImage.fadeTo(1000, 0);
+  //   nextImage.fadeTo(1000, 1);
 
-    currentImageIndex = (currentImageIndex + 1) % nLocationImages;
-    nextImageIndex = (currentImageIndex + 1) % nLocationImages;
+  //   currentImageIndex = (currentImageIndex + 1) % nLocationImages;
+  //   nextImageIndex = (currentImageIndex + 1) % nLocationImages;
 
-  }, 6000)
+  // }, 6000)
 
 });

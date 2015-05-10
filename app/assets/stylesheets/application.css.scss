@@ -32,13 +32,16 @@ h1, h2, h3, h4{
 }
 
 nav.navbar{
-    //background-color: rgb( 4, 51, 77 );
     background: linear-gradient( rgb(0, 78, 135), rgb(0, 53, 93) );
     height: 130px;
 }
 
 .gray-bottom-border{
   border-bottom: 5px solid rgb(200, 199, 195);
+}
+
+.gray-top-border{
+  border-top: 5px solid rgb(200, 199, 195);
 }
 
 .ep-padding{
@@ -81,14 +84,19 @@ h2.home-page{
   font-size: 8pt;
   padding-left: 3px;
   vertical-align: middle;
+  position: absolute;
+  top: 6px;
+  color: #00355c;
 }
 
 .learn-more-tag{
-  font-family: "Open Sans Condensed";
-  font-size: 12pt;
-  font-weight: 600;
-  color: #00355c;
-  font-style: italic;
+  a{
+    font-family: "Open Sans Condensed";
+    font-size: 12pt;
+    font-weight: 600;
+    color: #00355c;
+    font-style: italic;
+  }
 }
 
 .learn-more-text{
@@ -163,8 +171,8 @@ h2.home-page{
 }
 
 #full-footer{
-  background-color: #eeeeee !important;
-  height: 50px;
+  background: linear-gradient( rgb(0, 53, 93), rgb(0, 78, 135) );
+  height: 120px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -253,12 +261,6 @@ h2.home-page{
 #new-york-image, #washington-dc-image,
 #new-jersey-image, #richmond-image{
   display: none;
-}
-
-.location-image{ 
-  position: absolute;
-  width: 100%;
-  min-height: 330px;
 }
 
 .padless{
@@ -604,7 +606,10 @@ h2.home-page{
 }
 
 #footer{
-  border-top: thin solid #cccccc;
+  border-top: 5px solid rgb(200, 199, 195);
+  .soft-top-space{
+    padding-top: 12px;
+  }
   .soft-gray-text{
     color: #969696;
   }
@@ -613,6 +618,77 @@ h2.home-page{
   }
   .text-padded-top{
     padding-top: 8px;
+  }
+
+
+  .container-fluid{
+    .association-image{
+      height: 67px;
+      width: 126px;
+    }
+
+    .philadelphia-address-text{
+      #philadelphia-header{
+        font-weight: bold;
+        font-size: 13pt;
+        font-family: "Open Sans Condensed";
+      }
+      font-family: "Open Sans";
+      text-align: right;
+      color: white;
+      font-size: 8pt;
+    }
+
+    .location-text{
+      color: white;
+      font-family: "Open Sans Condensed";
+      font-weight: bold;
+      margin-right: 18px;
+      font-size: 10pt;
+    }
+
+    .location-option{
+      color: rgb(201, 199, 195);
+      font-family: "Open Sans Condensed";
+      font-size: 10pt;
+      font-weight: bold;
+      margin-right: 7px;
+      cursor: pointer;
+    }
+
+    .location-image{
+      display: none;
+    }
+
+    .displaying{
+      display: inline;
+    }
+
+    .location-option#selected{
+      color: white;
+    }
+
+    .disclaimer{
+      color: rgb(201, 199, 195);
+      font-size: 7pt;
+      font-family: "Open Sans";
+    }
+
+    #american_bar_association{
+      margin-right: 40px;
+    }
+
+    #american_legal_and_financial_network{
+      margin-right: 20px;
+    }
+
+    #reo_mac{
+      margin-right: 20px;
+    }
+
+    #mortgage_bankers_association{
+      margin-right: 20px;
+    }
   }
 }
 
