@@ -54,7 +54,7 @@ nav.navbar{
 }
 
 p{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 17px;
 }
@@ -153,6 +153,28 @@ h2.home-page{
   }
 }
 
+.black-carousel-overlay{
+  background-color: rgba(0, 0, 0, 0.7);
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.black-overlay-text{
+  color: white;
+  font-family: "Open Sans Condensed";
+  text-align: center;
+  margin-top: 23px;
+  font-size: 25px;
+}
+
+.paragraph-start{
+  color: #00355C;
+  font-weight: bold;
+  font-style: italic;
+}
+
 .raleway{
   font-family: 'Raleway';
   font-weight: 700;
@@ -169,6 +191,10 @@ h2.home-page{
 
 #full-content{
   // padding-bottom: 90px;
+  .container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 
 #full-footer{
@@ -337,6 +363,111 @@ h2.home-page{
 .clipped-box-area{
   height: 180px !important;
   overflow: hidden;
+}
+
+.page-title-text{
+  color: #00355c;
+  font-family: "Open Sans Condensed";
+  font-weight: bold;
+  font-size: 20pt;
+}
+
+.list-indicator-caret{
+  font-size: 8pt;
+  color: #00375f;
+  vertical-align: super;
+}
+
+.list-item-link{
+  color: #00375f;
+  margin-left: 7px;
+  font-family: "Open Sans Condensed";
+  font-size: 23px;
+}
+
+.content-section{
+  padding-right: 11%;
+  padding-left: 5%;
+  display: none;
+}
+
+.content-description{
+  p{
+    color: #00355C;
+    font-weight: 400;
+  }
+  .in-text-callout{
+    color: #00BAFD;
+  }
+}
+
+.item-list-row{
+  margin-right: 0px;
+
+  .clickable{
+    cursor: pointer;
+    padding-left: 8px;
+    margin-left: -8px;
+
+    -webkit-transition: background-color 250ms ease-in-out;
+    -moz-transition: background-color 250ms ease-in-out;
+    -o-transition: background-color 250ms ease-in-out;
+    transition: background-color 250ms ease-in-out;
+
+    &:hover{
+      background-color: rgb( 230, 229, 225 );
+    }
+  }
+}
+
+.most-recently-clicked{
+  background-color: rgb( 200, 199, 195 );
+  font-style: italic;
+}
+
+.callout-quote{
+  min-height: 65px;
+  background-color: #00355C;
+}
+
+.callout-text{
+  color: #FFFFFF;
+  font-family: "Open Sans Condensed";
+  font-size: 26px;
+  padding-top: 10px;
+  font-style: italic;
+}
+
+#right-side{
+  padding-bottom: 60px;
+}
+
+#left-side{
+  padding-bottom: 20px;
+}
+
+.single-left-list-link{
+  padding-bottom: 7px !important;
+}
+
+.left-side-list-column{
+  // border-right: 5px solid rgb(200, 199, 195);
+}
+
+.gray-border-right-side{
+  border-right: 5px solid rgb(200, 199, 195);
+}
+
+.gray-border-left-side{
+  border-left: 5px solid rgb(200, 199, 195);
+}
+
+.single-item-title{
+  color: #00355C;
+  font-family: "Open Sans Condensed";
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
 }
 
 .attorney-row{

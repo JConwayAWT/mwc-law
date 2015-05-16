@@ -19,22 +19,15 @@
 
 $(document).ready(function(){
   
-  // fade through location images
+  window_height = window.innerHeight;
 
-  // var nLocationImages = $(".location-image").length;
-  // var currentImageIndex = nLocationImages - 1;
-  // var nextImageIndex = 0;
+  header_height = $("nav").height();
+  footer_height = $("#full-footer").height();
 
-  // setInterval(function(){
-  //   currentImage = $( $(".location-image")[currentImageIndex] );
-  //   nextImage = $( $(".location-image")[nextImageIndex] );
+  remaining_height = window_height - header_height - footer_height;
 
-  //   currentImage.fadeTo(1000, 0);
-  //   nextImage.fadeTo(1000, 1);
+  string_height = remaining_height + "px";
 
-  //   currentImageIndex = (currentImageIndex + 1) % nLocationImages;
-  //   nextImageIndex = (currentImageIndex + 1) % nLocationImages;
-
-  // }, 6000)
+  $("#left-side").css({"min-height": string_height});
 
 });
