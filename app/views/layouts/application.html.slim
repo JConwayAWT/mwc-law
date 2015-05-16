@@ -15,7 +15,7 @@ html
         nav.navbar#no-border-radius.gray-bottom-border role="navigation"
           .container-fluid.ep-padding
             .navbar-header
-              button.navbar-toggle.collapsed type="button" data-toggle="collapse" data-target="#mwc-navbar"
+              button.navbar-toggle.collapsed type="button" data-toggle="collapse" data-target="#mwc-navbar" aria-expanded="false" aria-controls="navbar"
                 span.sr-only Toggle Navigation
                 span.icon-bar
                 span.icon-bar
@@ -23,7 +23,7 @@ html
               .navbar-brand
                 = link_to "/", class: "mwc-logo-link"
                   = image_tag "mwc-logo-vector-transparent.png", class: "mwc-logo-image-file"
-            .navbar-collapse.collapse#mwc-navbar
+            .navbar-collapse.collapse#mwc-navbar aria-expanded="false"
               ul.nav.navbar-nav.navbar-right#navbar-link-margin
                 li
                   a.single-header-link href="/the_firm" The Firm

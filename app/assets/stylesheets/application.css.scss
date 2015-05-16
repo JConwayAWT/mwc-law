@@ -33,7 +33,11 @@ h1, h2, h3, h4{
 
 nav.navbar{
     background: linear-gradient( rgb(0, 78, 135), rgb(0, 53, 93) );
-    height: 130px;
+    min-height: 130px;
+}
+
+.navbar-collapse{
+  box-shadow: none;
 }
 
 .gray-bottom-border{
@@ -160,20 +164,17 @@ h2.home-page{
 }
 
 #full-header{
-  position: fixed;
-  width: 100%;
-  z-index: 1000000;
+  // width: 100%;
 }
 
 #full-content{
-  padding-bottom: 90px;
-  padding-top: 130px
+  // padding-bottom: 90px;
 }
 
 #full-footer{
   background: linear-gradient( rgb(0, 53, 93), rgb(0, 78, 135) );
-  height: 120px;
-  position: absolute;
+  min-height: 120px;
+  // position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
@@ -187,7 +188,7 @@ h2.home-page{
 }
 
 .hero-image{
-  max-width: 100%;
+  width: 100%;
   height: auto;
   overflow-x: hidden;
 }
@@ -201,6 +202,25 @@ h2.home-page{
   top: 280px;
   text-align: center;
   width: 100%;
+}
+
+.four-column-responsive-disappear{
+  @media (max-width: 991px){
+    display: none;
+  }
+}
+
+.four-column-responsive-appear{
+  @media (min-width: 992px){
+    display: none;
+  }
+}
+
+.home-play-responsive-appear{
+  font-size: 8pt;
+  color: #00355C;
+  padding-left: 5px;
+  padding-bottom: 30px;
 }
 
 .image-overlay-text{
