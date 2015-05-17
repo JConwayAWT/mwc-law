@@ -1,74 +1,115 @@
-.row.practice-area-row
-  .col-md-3.col-md-offset-1
+.row.item-list-row
+  .col-md-2.col-md-offset-1.left-side-list-column#left-side style="padding-right: 0px;"
     .text-left
-      h2.practice-areas Practice Areas
-      .single-practice-area-link 
-        span.clickable data-practice-area-section-id="foreclosure" + Foreclosure
-      .single-practice-area-link 
-        span.clickable data-practice-area-section-id="bankruptcy" + Bankruptcy
-      .single-practice-area-link 
-        span.clickable data-practice-area-section-id="loss-mitigation" + Loss Mitigation
-      .single-practice-area-link 
-        span.clickable data-practice-area-section-id="evictions" + Evictions
-      .single-practice-area-link 
-        span.clickable data-practice-area-section-id="reo-services" + REO Services
-      .single-practice-area-link 
-        span.clickable data-practice-area-section-id="litigation" + Litigation
-      .single-practice-area-link 
-        span.clickable data-practice-area-section-id="title-insurance-services" + Title Insurance Services
+      h2.page-title-text PRACTICE AREAS
+      .single-left-list-link
+        span
+          .clickable data-content-section-id="foreclosure"
+            span.glyphicon.glyphicon-play.list-indicator-caret
+            span.list-item-link Foreclosure
+      .single-left-list-link
+        span
+          .clickable data-content-section-id="bankruptcy"
+            span.glyphicon.glyphicon-play.list-indicator-caret
+            span.list-item-link Bankruptcy
+      .single-left-list-link
+        span
+          .clickable data-content-section-id="loss-mitigation"
+            span.glyphicon.glyphicon-play.list-indicator-caret
+            span.list-item-link Loss Mitigation
+      .single-left-list-link
+        span
+          .clickable data-content-section-id="evictions"
+            span.glyphicon.glyphicon-play.list-indicator-caret
+            span.list-item-link Evictions
+      .single-left-list-link
+        span
+          .clickable data-content-section-id="reo-services"
+            span.glyphicon.glyphicon-play.list-indicator-caret
+            span.list-item-link REO Services
+      .single-left-list-link
+        span
+          .clickable data-content-section-id="litigation"
+            span.glyphicon.glyphicon-play.list-indicator-caret
+            span.list-item-link Litigation
+      .single-left-list-link
+        span
+          .clickable data-content-section-id="title-insurance-services"
+            span.glyphicon.glyphicon-play.list-indicator-caret
+            span.list-item-link Title Insurance Services
 
-  .col-md-7
-    #foreclosure.practice-area-section
-      h3 Foreclosure
-      .practice-area-description
-        p MWC has earned a reputation for excellence in concluding cases within client timelines in Pennsylvania, New York, New Jersey, Maryland, Virginia and the District of Columbia.
+  .col-md-9#right-side.padless
+    .callout-quote.gray-bottom-border
+      .callout-text.text-center A depth of knowledge and expertise unmatched in the mortgage banking industry
+    #foreclosure.content-section style="display: block"
+      h3.single-item-title FORECLOSURE
+      .content-description
+        p <span class="paragraph-start">MWC HAS EARNED A REPUTATION</span> for excellence in concluding cases within client timelines in Pennsylvania, New York, New Jersey, Maryland, Virginia and the District of Columbia.
 
         p Our experience and technology provide us with the ability to handle a high volume of cases accurately and efficiently.
 
-    #bankruptcy.practice-area-section
-      h3 Bankruptcy
-      .practice-area-description
-        p The bankruptcy department of our firm represents the interests of our clients in connection with all aspects of Chapter 7, 11 and 13 proceedings. Our practice provides creditor’s rights services including filing proofs of claim, attending 341 meetings, reaffirmation agreements and prosecuting motions for relief. We also handle complex matters such as the defense of adversary actions, objections to plans of reorganization and workout agreements.
+    #bankruptcy.content-section
+      h3.single-item-title BANKRUPTCY
+      .content-description
+        p <span class="paragraph-start">THE BANKRUPTCY DEPARTMENT</span> of our firm represents the interests of our clients in connection with all aspects of Chapter 7, 11 and 13 proceedings. Our practice provides creditor’s rights services including filing proofs of claim, attending 341 meetings, reaffirmation agreements and prosecuting motions for relief. We also handle complex matters such as the defense of adversary actions, objections to plans of reorganization and workout agreements.
 
-    #loss-mitigation.practice-area-section
-      h3 Loss Mitigation
-      .practice-area-description
-        p We focus our attention on identifying loss mitigation opportunities for our clients. Our services include forbearance agreements, loan modifications, deeds in lieu of foreclosure, cash-for-keys, repayment plans and other work out arrangements. We understand the importance of reducing costs and saving time with non-performing loans.
+    #loss-mitigation.content-section
+      h3.single-item-title LOSS MITIGATION
+      .content-description
+        p <span class="paragraph-start">WE FOCUS OUR ATTENTION</span> on identifying loss mitigation opportunities for our clients. Our services include forbearance agreements, loan modifications, deeds in lieu of foreclosure, cash-for-keys, repayment plans and other work out arrangements. We understand the importance of reducing costs and saving time with non-performing loans.
 
-    #evictions.practice-area-section
-      h3 Evictions
-      .practice-area-description
-        p Securing possession of real property is a critical process for our clients. Our eviction procedure provides for close monitoring of each action we file. Whether negotiating cash-for-keys agreements or fully litigating an eviction, our goal is to secure the property as quickly as possible after the foreclosure sale. 
+    #evictions.content-section
+      h3.single-item-title EVICTIONS
+      .content-description
+        p <span class="paragraph-start">SECURING POSSESSION OF REAL PROPERTY</span> is a critical process for our clients. Our eviction procedure provides for close monitoring of each action we file. Whether negotiating cash-for-keys agreements or fully litigating an eviction, our goal is to secure the property as quickly as possible after the foreclosure sale. 
 
         p We focus on our clients’ need to successfully market or convey the property as rapidly as possible.
 
 
-    #reo-services.practice-area-section
-      h3 REO Services
-      .practice-area-description
-        p Quick and accurate closings is the mantra of our REO Department. We assist the REO asset manager with coordinating the closing by resolving all issues timely and compelling all parties to be at the closing as contractually agreed.
+    #reo-services.content-section
+      h3.single-item-title REO SERVICES
+      .content-description
+        p <span class="paragraph-start">"QUICK AND ACCURATE CLOSINGS"</span> is the mantra of our REO Department. We assist the REO asset manager with coordinating the closing by resolving all issues timely and compelling all parties to be at the closing as contractually agreed.
 
-    #litigation.practice-area-section
-      h3 Litigation
-      .practice-area-description
-        p Our strengths in the courtroom are well known in our region. We are staffed with seasoned litigators who routinely appear to try cases before judges, juries and arbitrators in the states we serve. We handle civil litigation on behalf of lenders, servicers and investors. 
+    #litigation.content-section
+      h3.single-item-title LITIGATION
+      .content-description
+        p <span class="paragraph-start">OUR STRENGTHS IN THE COURTROOM</span> are well known in our region. We are staffed with seasoned litigators who routinely appear to try cases before judges, juries and arbitrators in the states we serve. We handle civil litigation on behalf of lenders, servicers and investors. 
 
         p Our experience includes litigation of judicial foreclosures, lender liability, truth-in-lending claims, insurance matters, fair debt collection practices claims, title insurance coverage issues and related litigation.
 
 
-    #title-insurance-services.practice-area-section
-      h3 Title Insurance Services
-      .practice-area-description
-        p Through our affiliated agencies we offer title and closing services to our clients. Access to these agencies allows us to deliver an integrated approach to the entire foreclosure process. 
+    #title-insurance-services.content-section
+      h3.single-item-title TITLE INSURANCE SERVICES
+      .content-description
+        p <span class="paragraph-start">THROUGH OUR AFFILIATED AGENCIES</span> we offer title and closing services to our clients. Access to these agencies allows us to deliver an integrated approach to the entire foreclosure process. 
 
         p Having title work returned efficiently is critical to meeting and exceeding timeline requirements. As agents for national underwriters, our affiliates offer title searches, full commitments, title clearance and a range of insurance products.
 
 
 javascript:
   $(document).ready(function(){
+    update_border_for_taller_side();
+
     $(".clickable").click(function(){
-      var desired_section = "#" + $(this).data().practiceAreaSectionId;
-      $(".practice-area-section").hide();
+      var desired_section = "#" + $(this).data().contentSectionId;
+      $(".content-section").hide();
       $(desired_section).show();
+      update_border_for_taller_side();
+
+      $(".clickable").removeClass("most-recently-clicked");
+      $(this).addClass("most-recently-clicked");
     });
+
+    function update_border_for_taller_side(){
+      if ( $("#right-side").height() + parseInt($("#right-side").css("padding-bottom")) > $("#left-side").height() + parseInt($("#left-side").css("padding-bottom")) ){
+        $("#left-side").removeClass("gray-border-right-side");
+        $("#right-side").addClass("gray-border-left-side");
+        console.log("right longer");
+      } else {
+        $("#right-side").removeClass("gray-border-left-side");
+        $("#left-side").addClass("gray-border-right-side");
+        console.log("left longer");
+      }
+    }
   });

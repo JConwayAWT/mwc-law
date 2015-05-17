@@ -53,10 +53,15 @@ nav.navbar{
   padding-right: 8%;
 }
 
-p{
+p, .li-text{
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 17px;
+}
+
+.li-text{
+  font-weight: 400;
+  color: #00355C;
 }
 
 .navbar{
@@ -448,6 +453,16 @@ h2.home-page{
 
 .single-left-list-link{
   padding-bottom: 7px !important;
+}
+
+.employment-application-form{
+  padding-left: 12%;
+  padding-right: 12%;
+}
+
+.fannie-mae-text{
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .left-side-list-column{

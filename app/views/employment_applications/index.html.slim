@@ -1,26 +1,60 @@
-.row.career-row
-  .col-md-3.col-md-offset-1
+.row.item-list-row
+  .col-md-2.col-md-offset-1.left-side-list-column#left-side style="padding-right: 0px;"
     .text-left
-      h2.careers Careers
+      h2.page-title-text CAREERS
 
-  .col-md-5
-    .disclaimer
-      | It is the policy of McCabe, Weisberg and Conway not to discriminate against any employee or applicant for employment because of race, color, religion, sex, national origin, age, marital status, genetic information, disability or because he or she is a protected veteran. It is also the policy of McCabe, Weisberg and Conway to take affirmative action to employ and to advance in employment all persons regardless of race, color, religion, sex, national origin, age, marital status, genetic information, disability or protected veteran status and to base all employment decisions only on valid job requirements.
-      br
-      br
-      | Please use the form below to indicate your area of interest and desired office location.  
-    = form_for(EmploymentApplication.new) do |f|
-      .form-group
-        = f.text_field :name, autofocus: true, placeholder: "Your name", required: true, class: "form-control"
-      .form-group
-        = f.email_field :email, placeholder: "Your email address", class: 'form-control'
-      .form-group
-        = f.text_area :message, placeholder: "Let us know why you're applying and what position you're interested in.", rows: 4, class: "form-control"
-      .form-group
-        = f.label "Location"
-        = f.select :office_location, @offices, {selected: @offices.first}, class: "form-control"
-      .form-group
-        = f.label "Please upload your resume"
-        = f.file_field :resume, class: "form-control"
-      .text-right
-        = f.submit "Submit application", class: "btn btn-primary"
+  .col-md-9#right-side.padless
+    .callout-quote.gray-bottom-border
+      .callout-text.text-center A depth of knowledge and expertise unmatched in the mortgage banking industry
+    #employment-application.content-section style="display: block"
+      h3.single-item-title EMPLOYMENT APPLICATION
+      .employment-application-form
+        .disclaimer
+          | <span class="paragraph-start">IT IS THE POLICY OF McCABE, WEISBERG AND CONWAY</span> not to discriminate against any employee or applicant for employment because of race, color, religion, sex, national origin, age, marital status, genetic information, disability or because he or she is a protected veteran. It is also the policy of McCabe, Weisberg and Conway to take affirmative action to employ and to advance in employment all persons regardless of race, color, religion, sex, national origin, age, marital status, genetic information, disability or protected veteran status and to base all employment decisions only on valid job requirements.
+          br
+          br
+          | Please use the form below to indicate your area of interest and desired office location.
+          br
+          hr
+        = form_for(EmploymentApplication.new) do |f|
+          .form-group
+            = f.text_field :name, autofocus: true, placeholder: "Your name", required: true, class: "form-control"
+          .form-group
+            = f.email_field :email, placeholder: "Your email address", class: 'form-control'
+          .form-group
+            = f.text_area :message, placeholder: "Let us know why you're applying and what position you're interested in.", rows: 4, class: "form-control"
+          .form-group
+            = f.label "Location"
+            = f.select :office_location, @offices, {selected: @offices.first}, class: "form-control"
+          .form-group
+            = f.label "Please upload your resume"
+            = f.file_field :resume, class: "form-control"
+          .text-right
+            = f.submit "Submit application", class: "btn btn-primary"
+
+javascript:
+  $(document).ready(function(){
+    update_border_for_taller_side();
+
+    $(".clickable").click(function(){
+      var desired_section = "#" + $(this).data().contentSectionId;
+      $(".content-section").hide();
+      $(desired_section).show();
+      update_border_for_taller_side();
+
+      $(".clickable").removeClass("most-recently-clicked");
+      $(this).addClass("most-recently-clicked");
+    });
+
+    function update_border_for_taller_side(){
+      if ( $("#right-side").height() + parseInt($("#right-side").css("padding-bottom")) > $("#left-side").height() + parseInt($("#left-side").css("padding-bottom")) ){
+        $("#left-side").removeClass("gray-border-right-side");
+        $("#right-side").addClass("gray-border-left-side");
+        console.log("right longer");
+      } else {
+        $("#right-side").removeClass("gray-border-left-side");
+        $("#left-side").addClass("gray-border-right-side");
+        console.log("left longer");
+      }
+    }
+  });

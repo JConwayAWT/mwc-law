@@ -1,21 +1,56 @@
-br
+.row.item-list-row
+  .col-md-2.col-md-offset-1.left-side-list-column#left-side style="padding-right: 0px;"
+    .text-left
+      h2.page-title-text FANNIE MAE
 
-.row
-  .col-md-12
-    .text-center
-      = image_tag "fannie_mae_logo.jpg", style: "width: 600px; height: auto"
+  .col-md-9#right-side.padless
+    .callout-quote.gray-bottom-border
+      .callout-text.text-center A depth of knowledge and expertise unmatched in the mortgage banking industry
 
-br
+    #fannie-mae.content-section style="display: block"
+      h3
+        .content-description
+          .text-center
+            = image_tag "fannie_mae_logo_transparent.png", style: "width: 600px; height: auto"
 
-.row
-  .col-md-6.col-md-offset-3
-      | Fannie Mae has issued a no objection for McCabe, Weisberg &amp; Conway P.C. and LLC in the following locations:<br><br>
-      ul
-        li Pennsylvania
-        li New Jersey
-        li New York
-        li Maryland
-        li Virginia
-        li Delaware
-        li District of Columbia
-      | Our firm observes the Fannie Mae fee schedules for all locations in which we practice.
+            br
+            br
+
+          .fannie-mae-text
+            p <span class="paragraph-start">FANNIE MAE HAS ISSUED A NO OBJECTION</span> for McCabe, Weisberg &amp; Conway P.C. and LLC in the following locations:
+            ul
+              li.li-text Pennsylvania
+              li.li-text New Jersey
+              li.li-text New York
+              li.li-text Maryland
+              li.li-text Virginia
+              li.li-text Delaware
+              li.li-text District of Columbia
+            p Our firm observes the Fannie Mae fee schedules for all locations in which we practice.
+
+javascript:
+  $(document).ready(function(){
+    update_border_for_taller_side();
+
+    $(".clickable").click(function(){
+      var desired_section = "#" + $(this).data().contentSectionId;
+      $(".content-section").hide();
+      $(desired_section).show();
+      update_border_for_taller_side();
+
+      $(".clickable").removeClass("most-recently-clicked");
+      $(this).addClass("most-recently-clicked");
+    });
+
+    function update_border_for_taller_side(){
+      if ( $("#right-side").height() + parseInt($("#right-side").css("padding-bottom")) > $("#left-side").height() + parseInt($("#left-side").css("padding-bottom")) ){
+        $("#left-side").removeClass("gray-border-right-side");
+        $("#right-side").addClass("gray-border-left-side");
+        console.log("right longer");
+      } else {
+        $("#right-side").removeClass("gray-border-left-side");
+        $("#left-side").addClass("gray-border-right-side");
+        console.log("left longer");
+      }
+    }
+  });
