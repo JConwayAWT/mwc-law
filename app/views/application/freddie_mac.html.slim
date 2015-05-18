@@ -8,12 +8,10 @@
       .callout-text.text-center A depth of knowledge and expertise unmatched in the mortgage banking industry
 
     #fannie-mae.content-section style="display: block"
-      h3
+      h3.single-item-title
+        | FREDDIE MAC
         .content-description
           .text-center
-            = image_tag "freddie_mac_logo_transparent.png", style: "width: 450px; height: auto"
-
-            br
             br
 
           .fannie-mae-text
@@ -46,11 +44,9 @@ javascript:
       if ( $("#right-side").height() + parseInt($("#right-side").css("padding-bottom")) > $("#left-side").height() + parseInt($("#left-side").css("padding-bottom")) ){
         $("#left-side").removeClass("gray-border-right-side");
         $("#right-side").addClass("gray-border-left-side");
-        console.log("right longer");
       } else {
         $("#right-side").removeClass("gray-border-left-side");
         $("#left-side").addClass("gray-border-right-side");
-        console.log("left longer");
       }
     }
   });

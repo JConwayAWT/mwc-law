@@ -102,17 +102,3 @@ html
                     span.location-option data-file-name="virginia_location" VA
                     span.location-option data-file-name="delaware_location" DE
                     span.location-option data-file-name="new_jersey_location" NJ
-
-javascript:
-  $(document).ready(function(){
-    $(".location-option").click(function(){
-      $("#selected").removeAttr("id");
-      $(this).attr("id", "selected");
-
-      current_file_name = $(this).data().fileName;
-
-      $(".location-images").find(".displaying").removeClass("displaying");
-      $(".location-images").find("#" + current_file_name).addClass("displaying");
-
-    });
-  });

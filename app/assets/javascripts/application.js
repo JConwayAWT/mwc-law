@@ -30,4 +30,15 @@ $(document).ready(function(){
 
   $("#left-side").css({"min-height": string_height});
 
+  $(window).resize(function(event) {
+    if ( $("#footer").height() > 107 ){
+      // something unusual is happening
+      $("#full-content").css({"padding-bottom": "300px"});
+    }
+    else{
+      // we're back to normal
+      $("#full-content").css({"padding-bottom": "90px"});
+    }
+  });
+
 });

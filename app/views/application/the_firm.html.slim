@@ -71,11 +71,9 @@ javascript:
       if ( $("#right-side").height() + parseInt($("#right-side").css("padding-bottom")) > $("#left-side").height() + parseInt($("#left-side").css("padding-bottom")) ){
         $("#left-side").removeClass("gray-border-right-side");
         $("#right-side").addClass("gray-border-left-side");
-        console.log("right longer");
       } else {
         $("#right-side").removeClass("gray-border-left-side");
         $("#left-side").addClass("gray-border-right-side");
-        console.log("left longer");
       }
     }
   });
