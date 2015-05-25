@@ -11,6 +11,12 @@ html
 
   body
     #full-wrapper
+      - if Alert.any?
+        .row.padless.sitewide-alert-row style="margin-left: 0px; margin-right: 0px;"
+          .col-md-12.ep-padding
+            - Alert.all.each do |alert|
+              b Notice: 
+              .sitewide-alert-text = simple_format(alert.body.html_safe)
       #full-header
         nav.navbar#no-border-radius.gray-bottom-border role="navigation"
           .container-fluid.ep-padding
@@ -26,30 +32,30 @@ html
             .navbar-collapse.collapse#mwc-navbar aria-expanded="false"
               ul.nav.navbar-nav.navbar-right#navbar-link-margin
                 li
-                  a.single-header-link href="/the_firm" The Firm
+                  a.single-header-link#firm-link href="/the_firm" The Firm
                 li
-                  a.single-header-link href="/offices" Offices
+                  a.single-header-link#offices-link href="/offices" Offices
                 li
-                  a.single-header-link href="/attorneys" Attorneys
+                  a.single-header-link#attorneys-link href="/attorneys" Attorneys
                 li
-                  a.single-header-link href="/affiliates" Affiliates
+                  a.single-header-link#affiliates-link href="/affiliates" Affiliates
                 li
-                  a.single-header-link href="/practice_areas" Practice Areas
+                  a.single-header-link#areas-link href="/practice_areas" Practice Areas
                 li
-                  a.single-header-link href="/fannie_mae" Fannie Mae
+                  a.single-header-link#mae-link href="/fannie_mae" Fannie Mae
                 li
-                  a.single-header-link href="/freddie_mac" Freddie Mac
+                  a.single-header-link#mac-link href="/freddie_mac" Freddie Mac
                 li
-                  a.single-header-link href="/employment_applications" Careers
+                  a.single-header-link#careers-link href="/employment_applications" Careers
 
       #full-content
         .container-fluid#body-container
-          - if Alert.any?
-            .row.padless.sitewide-alert-row
-              .col-md8.col-md-offset-2.padless
-                - Alert.all.each do |alert|
-                  b Notice: 
-                  .sitewide-alert-text = simple_format(alert.body.html_safe)
+          / - if Alert.any?
+          /   .row.padless.sitewide-alert-row
+          /     .col-md8.col-md-offset-2.padless
+          /       - Alert.all.each do |alert|
+          /         b Notice: 
+          /         .sitewide-alert-text = simple_format(alert.body.html_safe)
 
           = yield
 

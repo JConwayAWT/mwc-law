@@ -1,9 +1,13 @@
-.row.new-alert-row
+.row.new-alert-row style="margin-left: 0px; margin-right: 0px; margin-bottom: 65px;"
   .col-md-3.col-md-offset-1
     .text-left
       h2.new-alerts Delete Alerts
 
   .col-md-5.delete-alerts-form-top
+    - if flash[:alert]
+      .alert.alert-danger
+        b Error: &nbsp;
+        = flash.alert
     - if @alerts.any?
       b Check the box for each alert that you would like to delete.
       br

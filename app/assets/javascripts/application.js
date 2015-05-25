@@ -19,17 +19,6 @@
 
 $(document).ready(function(){
   
-  // window_height = window.innerHeight;
-
-  // header_height = $("nav").height();
-  // footer_height = $("#full-footer").height();
-
-  // remaining_height = window_height - header_height - footer_height;
-
-  // string_height = remaining_height + "px";
-
-  // $("#left-side").css({"min-height": string_height});
-
   resize_padding_for_footer();
 
   $(window).resize(function(event) {
@@ -49,3 +38,6 @@ $(document).ready(function(){
   }
 
 });
+
+//TODO: make alerts stuff nicer
+//    : make the headers light up for the proper page

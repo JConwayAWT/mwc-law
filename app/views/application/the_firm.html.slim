@@ -55,6 +55,11 @@
 
 javascript:
   $(document).ready(function(){
+    element_identifier = "#firm-link";
+    $(element_identifier).addClass("selected-header-link");
+    original_text = $(element_identifier).text();
+    $(element_identifier).text( original_text + " >>" );
+
     update_border_for_taller_side();
 
     $(".clickable").click(function(){
