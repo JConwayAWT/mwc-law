@@ -37,6 +37,15 @@ $(document).ready(function(){
     }
   }
 
+  // make the left side as big as it needs to be
+  header_height = $("#full-header").height();
+  footer_height = $("#footer").height();
+  window_height = $(window).innerHeight();
+
+  free_space = window_height - header_height - footer_height;
+
+  $("#left-side").css({"min-height": free_space + "px"});
+
 });
 
 //TODO: make alerts stuff nicer
