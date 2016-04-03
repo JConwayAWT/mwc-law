@@ -1,23 +1,26 @@
-#myCarousel.carousel.slide.gray-bottom-border data-ride="carousel" 
+#myCarousel.carousel.carousel-fade.slide.gray-bottom-border data-ride="carousel"
   /! Indicators
   ol.carousel-indicators
-    li.active data-slide-to="0" data-target="#myCarousel" 
-    li data-slide-to="1" data-target="#myCarousel" 
-    li data-slide-to="2" data-target="#myCarousel" 
-  .carousel-inner role="listbox" 
+    li.active data-slide-to="0" data-target="#myCarousel"
+    li data-slide-to="1" data-target="#myCarousel"
+    li data-slide-to="2" data-target="#myCarousel"
+    li data-slide-to="3" data-target="#myCarousel"
+  .carousel-inner role="listbox"
     .item.active
-      img.first-slide =image_tag "philadelphia_blue_tone.png", style: "width: 100%"
+      img.first-slide =image_tag "u_philadelphia_sky_line.png", style: "width: 100%"
     .item
-      img.second-slide =image_tag "new_york_city_blue_tone.png", style: "width: 100%"
+      img.second-slide =image_tag "u_nyc_statue_of_liberty.png", style: "width: 100%"
     .item
-      img.third-slide =image_tag "washington_dc_blue_tone.png", style: "width: 100%"
+      img.third-slide =image_tag "u_philadelphia_city_hall.png", style: "width: 100%"
+    .item
+      img.third-slide =image_tag "u_washington_capitol_building.png", style: "width: 100%"
   .black-carousel-overlay
     .black-overlay-text Serving the mortgage banking industry in the mid-Atlantic region
-  a.left.carousel-control data-slide="prev" href="#myCarousel" role="button" 
-    span.glyphicon.glyphicon-chevron-left aria-hidden="true" 
+  a.left.carousel-control data-slide="prev" href="#myCarousel" role="button"
+    span.glyphicon.glyphicon-chevron-left aria-hidden="true"
     span.sr-only Previous
-  a.right.carousel-control data-slide="next" href="#myCarousel" role="button" 
-    span.glyphicon.glyphicon-chevron-right aria-hidden="true" 
+  a.right.carousel-control data-slide="next" href="#myCarousel" role="button"
+    span.glyphicon.glyphicon-chevron-right aria-hidden="true"
     span.sr-only Next
 
 
@@ -28,7 +31,7 @@
     p.home-page-text McCabe, Weisberg & Conway is an expanding regional firm representing mortgage lenders, banks, mortgage servicers, and financial institutions in Pennsylvania, New York, New Jersey, Delaware, Maryland, Virginia, and the District of Columbia. Our attorneys have been committed for over 40 years to providing the most comprehensive and efficient legal representation available to the mortgage banking industry.
     .text-center
       .learn-more-tag.four-column-responsive-appear
-        span.learn-more-text 
+        span.learn-more-text
           = link_to "Learn More", "/the_firm"
         span.glyphicon.glyphicon-play.home-play-responsive-appear
 
@@ -37,7 +40,7 @@
     p.home-page-text The firm was founded in 1973 by Terrence McCabe and Marc Weisberg, who met while working at a large national title insurance company.  They were later joined by Edward Conway, a seasoned litigator in lender liability and creditor's rights.  MWC now employs a diverse team of expert laywers, paralegals, and administrators knowledgeable in all areas of the mortgage banking industry, many of whom have more than 20 years of experience in this field.
     .text-center
       .learn-more-tag.four-column-responsive-appear
-        span.learn-more-text 
+        span.learn-more-text
           = link_to "Learn More", "/the_firm"
         span.glyphicon.glyphicon-play.home-play-responsive-appear
 
@@ -46,7 +49,7 @@
     p.home-page-text MWC has earned a reputation for excellence in concluding cases within client timelines throughout the Mid-Atlantic region.  The firm's experience and technology ensure the ability to handle even the highest volume of cases with accuracy and efficiency.  The legal team has significant expertise in foreclosure, bankruptcy, loss mitigation, and several other areas.
     .text-center
       .learn-more-tag.four-column-responsive-appear
-        span.learn-more-text 
+        span.learn-more-text
           = link_to "Learn More", "/the_firm"
         span.glyphicon.glyphicon-play.home-play-responsive-appear
 
@@ -54,19 +57,19 @@
   .col-md-4
     .text-center
       .learn-more-tag.four-column-responsive-disappear
-        span.learn-more-text 
+        span.learn-more-text
           = link_to "Learn More", "/the_firm"
         span.glyphicon.glyphicon-play.home-play
   .col-md-4
     .text-center
       .learn-more-tag.four-column-responsive-disappear
-        span.learn-more-text 
+        span.learn-more-text
           = link_to "Learn More", "/attorneys"
         span.glyphicon.glyphicon-play.home-play
   .col-md-4
     .text-center
       .learn-more-tag.four-column-responsive-disappear
-        span.learn-more-text 
+        span.learn-more-text
           = link_to "Learn More", "/practice_areas"
         span.glyphicon.glyphicon-play.home-play
 
@@ -102,7 +105,7 @@
 /   .row.padless.notice-row
 /     .col-md-12.padless
 /       .text-center
-/         b Notice: 
+/         b Notice:
 /         | #{flash["notice"]}
 
 / .my-container.container-md-height
@@ -127,7 +130,7 @@
 /     .col-md-4.col-md-height.soft-right
 /       h2.home-page Practice Areas
 
-/       p MWC has earned a reputation for excellence in concluding cases within client timelines throughout the Mid-Atlantic region.  The firm's experience and technology ensure the ability to handle even the highest volume of cases with accuracy and efficiency.  The legal team has significant expertise in foreclosure, bankruptcy, loss mitigation, and several other areas.  
+/       p MWC has earned a reputation for excellence in concluding cases within client timelines throughout the Mid-Atlantic region.  The firm's experience and technology ensure the ability to handle even the highest volume of cases with accuracy and efficiency.  The legal team has significant expertise in foreclosure, bankruptcy, loss mitigation, and several other areas.
 
 /       .text-right
 /         = button_to "Learn More >", "/practice_areas", class: "btn btn-default learn-more-button", method: :get
