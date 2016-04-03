@@ -2,7 +2,9 @@ class ApplicationMailer < ActionMailer::Base
   default from: "mwc.law.no.reply@gmail.com"
 
   @@dev_address = "conwayje@gmail.com"
-  @@careers_address = "pschab@mwc-law.com"
+  @@careers_address = "conwayje@gmail.com"
+
+  #@@careers_address = "pschab@mwc-law.com"
 
   def new_employment_application(application_id)
     @app = EmploymentApplication.find(application_id)
