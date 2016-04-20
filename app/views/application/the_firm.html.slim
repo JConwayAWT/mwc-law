@@ -45,9 +45,9 @@
     #efficiency.content-section
       h3.single-item-title PROFICIENCY
       .content-description
-        p <span class="paragraph-start">WE HAVE LONG RECOGNIZED</span> that technology and training are the keys to efficiently provide accurate resolution of each file.  Our customized case management software gives us the ability to quickly provide status reports, meet timelines, and integrate any software program required by our clients.
+        p <span class="paragraph-start">WE HAVE LONG RECOGNIZED</span> that technology and training are the keys to providing accurate resolution of each file. Our customized case management software delivers the ability to provide accurate file tracking, detailed status reports that are easily customized to client matrix requirements along with the ability to integrate any third party software program that may be required in our industry. 
 
-        p Through regular training of our staff, we continuously reinforce skills and teamwork that are essential to delivering quality service that dependably meets or exceeds timeline requirements.
+        p Through regular training we continuously reinforce skills and teamwork that are essential to delivering quality legal service. We recognize that each file is unique and requires individualized management and attention to detail.
 
 
 javascript:
@@ -57,25 +57,43 @@ javascript:
     original_text = $(element_identifier).text();
     $(element_identifier).text( original_text + " >>" );
 
-    update_border_for_taller_side();
+    var current_displaying_height = $(".content-section").first().height() + 20
+    var upcoming_displaying_height = 999999;
+    var first_time = true
+
+    setTimeout(function(){
+      update_border_for_taller_side( $(".content-section").first() );
+    }, 50 );
 
     $(".clickable").click(function(){
       var desired_section = "#" + $(this).data().contentSectionId;
       $(".content-section").hide();
       $(desired_section).show();
-      update_border_for_taller_side();
+      update_border_for_taller_side( $(desired_section) );
 
       $(".clickable").removeClass("most-recently-clicked");
       $(this).addClass("most-recently-clicked");
     });
 
-    function update_border_for_taller_side(){
-      if ( $("#right-side").height() + parseInt($("#right-side").css("padding-bottom")) > $("#left-side").height() + parseInt($("#left-side").css("padding-bottom")) ){
-        $("#left-side").removeClass("gray-border-right-side");
-        $("#right-side").addClass("gray-border-left-side");
-      } else {
-        $("#right-side").removeClass("gray-border-left-side");
-        $("#left-side").addClass("gray-border-right-side");
+    function update_border_for_taller_side( el ){
+
+      if( first_time ){
+        first_time = false
       }
+      else{
+        upcoming_displaying_height = $(el).height() + 20;
+      }
+
+      if( upcoming_displaying_height > current_displaying_height ){
+        body_container_height = $("#body-container").height();
+        current_item_height = $(el).height() + 20;
+
+        new_height = Math.max(body_container_height, current_item_height);
+        $("#right-side").height(new_height)
+        current_displaying_height = new_height;
+      }
+
+      $("#right-side").addClass("gray-border-left-side");
+
     }
   });

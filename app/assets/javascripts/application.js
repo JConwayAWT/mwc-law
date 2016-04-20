@@ -26,15 +26,8 @@ $(document).ready(function(){
   });
 
   function resize_padding_for_footer(){
-    if ( $("#footer").height() > 107 ){
-      // something unusual is happening
-      f_height = $("#footer").height();
-      $("#full-content").css({"padding-bottom": f_height + 80 + "px"});
-    }
-    else{
-      // we're back to normal
-      $("#full-content").css({"padding-bottom": "90px"});
-    }
+    var footer_height = $("#full-footer").height();
+    $("#full-content").css({"padding-bottom": footer_height - 1});
   }
 
   // make the left side as big as it needs to be
