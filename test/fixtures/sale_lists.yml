@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mwc_html: MyText
+  mwc_file_name: MyString
+
+two:
+  mwc_html: MyText
+  mwc_file_name: MyString

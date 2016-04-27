@@ -1,0 +1,27 @@
+<h1>Listing sale_lists</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Mwc html</th>
+      <th>Mwc file name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @sale_lists.each do |sale_list| %>
+      <tr>
+        <td><%= sale_list.mwc_html %></td>
+        <td><%= sale_list.mwc_file_name %></td>
+        <td><%= link_to 'Show', sale_list %></td>
+        <td><%= link_to 'Edit', edit_sale_list_path(sale_list) %></td>
+        <td><%= link_to 'Destroy', sale_list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sale list', new_sale_list_path %>

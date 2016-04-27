@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  match "/lists/:mwc_file_name", to: "sale_lists#show", via: :get
+
   resources :employment_applications
 
   match "/alerts/delete", to: "alerts#delete", via: :get
