@@ -1209,3 +1209,11 @@ h2.home-page{
               transform: translate3d(0, 0, 0);
     }
 }
+
+.sales-list-button{
+  color: white !important;
+  margin-right: 20px;
+  &:hover{
+    background-color: #3071A9 !important;
+  }
+}
