@@ -17,6 +17,20 @@ html
             - Alert.all.each do |alert|
               b Notice: 
               .sitewide-alert-text = simple_format(alert.body.html_safe)
+
+
+      - if notice
+        .row.padless.sitewide-notice-row style="margin-left: 0px; margin-right: 0px;"
+          .col-md-12.ep-padding
+            b Notice:
+            .sitewide-notice-text = notice
+
+      - if alert
+        .row.padless.sitewide-alert-row style="margin-left: 0px; margin-right: 0px;"
+          .col-md-12.ep-padding
+            b Alert:
+            .sitewide-alert-text = alert
+
       #full-header
         nav.navbar#no-border-radius.gray-bottom-border role="navigation"
           .container-fluid.ep-padding

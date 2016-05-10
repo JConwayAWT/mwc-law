@@ -759,6 +759,17 @@ h2.home-page{
   }
 }
 
+.sitewide-notice-row{
+  background-color: rgba(144, 254, 144, 0.82);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .sitewide-notice-text{
+    p{
+      font-size: 14px;
+    }
+  }
+}
+
 .delete-alerts-form-top{
   padding-top: 38px;
 }
