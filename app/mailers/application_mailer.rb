@@ -1,8 +1,7 @@
 class ApplicationMailer < ActionMailer::Base
   default from: "mwc.law.no.reply@gmail.com"
 
-  @@dev_address = "conwayje@gmail.com"
-  @@careers_address = "pschab@mwc-law.com"
+  @@default_to = ENV["MWC_APPLICATION_MAILER_DEFAULT_TO_EMAIL_ADDRESS"]
 
   def new_employment_application(application_id)
     @app = EmploymentApplication.find(application_id)
@@ -11,11 +10,7 @@ class ApplicationMailer < ActionMailer::Base
       attachments[@app.resume.instance.resume_file_name] = File.read(@app.resume.path)
     end
 
-    if Rails.env == "development"
-      mail(to: @@dev_address, subject: "[mwc-law.com] New Employment Application")
-    else
-      mail(to: @@careers_address, subject: "[mwc-law.com] New Employment Application")
-    end
+    mail(to: @@default_to, subject: "[mwc-law.com] New Employment Application")
   end
 
   def ftp_credentials_revoked(ip, un, pw)
