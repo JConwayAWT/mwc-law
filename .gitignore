@@ -14,3 +14,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+# ignore the sqlite flat file databases
+mwclaw_development
+mwclaw_test
