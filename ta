@@ -1,0 +1,59 @@
+[1mdiff --git a/app/views/application/attorneys.html.slim b/app/views/application/attorneys.html.slim[m
+[1mindex 7321b29..69ae059 100644[m
+[1m--- a/app/views/application/attorneys.html.slim[m
+[1m+++ b/app/views/application/attorneys.html.slim[m
+[36m@@ -44,11 +44,21 @@[m
+             span.list-item-link Marisa Joy Myers Cohen[m
+       .single-left-list-link[m
+         span[m
+[32m+[m[32m          .clickable data-content-section-id="matthew-cohen"[m
+[32m+[m[32m            span.glyphicon.glyphicon-play.list-indicator-caret[m[41m [m
+[32m+[m[32m            span.list-item-link Matthew Cohen[m
+[32m+[m[32m      .single-left-list-link[m
+[32m+[m[32m        span[m
+           .clickable data-content-section-id="christine-graham"[m
+             span.glyphicon.glyphicon-play.list-indicator-caret [m
+             span.list-item-link Christine L. Graham[m
+       .single-left-list-link[m
+         span[m
+[32m+[m[32m          .clickable data-content-section-id="abby-moynihan"[m
+[32m+[m[32m            span.glyphicon.glyphicon-play.list-indicator-caret[m[41m [m
+[32m+[m[32m            span.list-item-link Abby K. Moynihan[m
+[32m+[m[32m      .single-left-list-link[m
+[32m+[m[32m        span[m
+           .clickable data-content-section-id="heidi-spivak"[m
+             span.glyphicon.glyphicon-play.list-indicator-caret [m
+             span.list-item-link Heidi R. Spivak[m
+[36m@@ -69,7 +79,7 @@[m
+     #terrence-mccabe.content-section style="display: block"[m
+       h3.single-item-title TERRENCE J. McCABE[m
+       .content-description[m
+[31m-        p <span class="paragraph-start">TERRENCE J. McCABE,</span> a founding shareholder (Of Counsel), is a graduate of the Memphis State University School of Law, having received his Juris Doctorate in 1972. He graduated from St. Bernard College in 1969 and is admitted to practice in Pennsylvania, New Jersey and New York. He is a member of the American Bar Association, Pennsylvania Bar Association, Philadelphia Bar Association, Philadelphia Trial Lawyers Association and Pennsylvania Trial Lawyers Association, The Federal Court for the Eastern District of Pennsylvania, New Jersey Bar Association and The Federal Court for the Southern District of New Jersey.[m
+[32m+[m[32m        p <span class="paragraph-start">TERRENCE J. McCABE,</span> a founding shareholder (retired), is a graduate of the Memphis State University School of Law, having received his Juris Doctorate in 1972. He graduated from St. Bernard College in 1969 and is admitted to practice in Pennsylvania, New Jersey and New York. He is a member of the American Bar Association, Pennsylvania Bar Association, Philadelphia Bar Association, Philadelphia Trial Lawyers Association and Pennsylvania Trial Lawyers Association, The Federal Court for the Eastern District of Pennsylvania, New Jersey Bar Association and The Federal Court for the Southern District of New Jersey.[m
+ [m
+     #marc-weisberg.content-section[m
+       h3.single-item-title MARC S. WEISBERG[m
+[36m@@ -116,11 +126,23 @@[m
+ [m
+         p Since graduating from law school Ms. Cohen has practiced exclusively in the areas of bankruptcy and foreclosure in the representation of mortgage lenders.   Ms. Cohen is licensed to practice in New Jersey and Pennsylvania. She is admitted to the Federal District Courts of New Jersey and the Eastern, Middle and Western Districts of Pennsylvania.  Ms. Cohen joined McCabe, Weisberg & Conway, P.C. in 2007.  Prior to being promoted to managing attorney of the New Jersey office, Ms. Cohen worked to create a consolidated bankruptcy department within the Firm to promote efficiency and strengthen client relations.[m
+ [m
+[32m+[m[32m    #matthew-cohen.content-section[m
+[32m+[m[32m      h3.single-item-title MATTHEW COHEN[m
+[32m+[m[32m      .content-description[m
+[32m+[m[32m        p <span class="paragraph-start">MATTHEW COHEN</span> graduated from Lehigh University, where in 2000 he received a Bachelor of Science in finance.  In 2005, Mr. Cohen received his Juris Doctorate from George Mason University School of Law.  Mr. Cohen is admitted to practice law in Maryland in 2005, Virginia in 2006, the District of Columbia in 2007, and Delaware in 2010. Mr. Cohen will focus his practice on Litigation as well as Virginia related matters with the firm.[m[41m    [m
+[32m+[m
+     #christine-graham.content-section[m
+       h3.single-item-title CHRISTINE L. GRAHAM[m
+       .content-description[m
+         p <span class="paragraph-start">CHRISTINE L. GRAHAM,</span> located in the Philadelphia, PA office of McCabe, Weisberg &amp; Conway, P.C., received her Bachelor's degree in Political Science from the Pennsylvania State University in 2004.  Thereafter, Ms. Graham attended Temple University Law School where she earned her Juris Doctorate in 2010.  Ms. Graham has worked with creditors with Real Estate Financing and Foreclosure matters since 2005. She currently concentrates her practice in the fields of foreclosure, REO and related litigation. Ms. Graham is licensed to practice in Pennsylvania and New Jersey.[m
+ [m
+[32m+[m[32m    #abby-moynihan.content-section[m
+[32m+[m[32m      h3.single-item-title ABBY K. MOYNIHAN[m
+[32m+[m[32m      .content-description[m
+[32m+[m[32m        p <span class="paragraph-start">ABBY K. MOYNIHAN</span> received her Bachelor's degree from the University of Delaware in 2005, and received her Juris Doctorate from University of New Hampshire Law School (formerly Franklin Pierce Law Center) in 2008.  Ms. Moynihan is licensed to practice in Virginia, Maryland  and the District of Columbia, she is also admitted to the United States District Court for the Eastern and Western Districts of Virginia, the United States Bankruptcy Court for the Eastern and Western Districts of Virginia, and the Fourth Circuit Court of Appeals.[m
+[32m+[m
+[32m+[m[32m        p Ms. Moynihan handles foreclosure-related matters in Virginia, along with Virginia Bankruptcy matters and oversees real property settlements. She has focused her practice  in consumer law transactions, including all aspects of foreclosure, bankruptcy, litigation and related matters involving secured transactions.[m
+[32m+[m[41m   [m
+     #heidi-spivak.content-section[m
+       h3.single-item-title HEIDI R. SPIVAK[m
+       .content-description[m
