@@ -801,7 +801,7 @@ index 264f8e6..0000000
 -    }
 -  }
 -
--  #aoss{
+-  #elss{
 -    display: none;
 -  }
 -}
