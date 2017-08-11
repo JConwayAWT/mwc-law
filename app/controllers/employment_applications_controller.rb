@@ -7,6 +7,7 @@ class EmploymentApplicationsController < ApplicationController
     @offices = []
     @offices << ["Delaware","Delaware"]
     @offices << ["District of Columbia", "District of Columbia"]
+    @offices << ["Florida", "Florida"]
     @offices << ["Long Island","Long Island"]
     @offices << ["Maryland", "Maryland"]
     @offices << ["New Jersey","New Jersey"]

@@ -7,7 +7,7 @@ html
     script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGKR61pjgohpnX79w-sFWXYXM29ZDh4M0"
     = csrf_meta_tags
 
-    meta name="Description" content="McCabe, Weisberg, and Conway offers legal representation for the mortgage banking industry in the mid-Atlantic region."
+    meta name="Description" content="McCabe, Weisberg, and Conway offers legal representation for the mortgage banking industry in the mid-Atlantic region and Florida."
 
   body
     #full-wrapper
@@ -101,23 +101,27 @@ html
                     = link_to image_tag( "new_york_location.png", class: "location-image", id: "new_york_location" ), "https://www.google.com/maps/place/145+Huguenot+St,+New+Rochelle,+NY+10801/@40.913467,-73.779503,16z/data=!4m2!3m1!1s0x89c28d91d78f391d:0xac714662af04e284?hl=en-US", target: "_blank"
                     = link_to image_tag( "long_island_location.png", class: "location-image", id: "long_island_location" ), "https://www.google.com/maps/place/1+Huntington+Quadrangle,+Melville,+NY+11747/@40.77303,-73.420608,16z/data=!4m2!3m1!1s0x89e82a35a87e2693:0xfcc10d82df65df6?hl=en-US", target: "_blank"
                     // note that maryland and dc share the same office basically
-                    = link_to image_tag( "dc_location.png", class: "location-image", id: "dc_location" ), "https://www.google.com/maps/place/312+Marshall+Ave,+Laurel+Centre+Mall+Shopping+Center,+Laurel,+MD+20707/@39.097556,-76.852788,16z/data=!4m2!3m1!1s0x89b7dd13a5724af9:0xdf14c9c4cfccc9dc?hl=en-US", target: "_blank"
-                    = link_to image_tag( "dc_location.png", class: "location-image", id: "maryland_location" ), "https://www.google.com/maps/place/312+Marshall+Ave,+Laurel+Centre+Mall+Shopping+Center,+Laurel,+MD+20707/@39.097556,-76.852788,16z/data=!4m2!3m1!1s0x89b7dd13a5724af9:0xdf14c9c4cfccc9dc?hl=en-US", target: "_blank"
+                    = link_to image_tag( "dc_location.png", class: "location-image", id: "dc_location" ), "https://www.google.com/maps/place/312+Marshall+Ave,+Laurel,+MD+20707/@39.097556,-76.852788,16z/data=!4m2!3m1!1s0x89b7dd13a5724af9:0xdf14c9c4cfccc9dc?hl=en-US", target: "_blank"
+                    = link_to image_tag( "dc_location.png", class: "location-image", id: "maryland_location" ), "https://www.google.com/maps/place/312+Marshall+Ave,+Laurel,+MD+20707/@39.097556,-76.852788,16z/data=!4m2!3m1!1s0x89b7dd13a5724af9:0xdf14c9c4cfccc9dc?hl=en-US", target: "_blank"
                     = link_to image_tag( "virginia_location.png", class: "location-image", id: "virginia_location" ), "https://www.google.com/maps/place/722+E+Market+St,+Leesburg,+VA+20176/@39.106595,-77.547086,16z/data=!4m2!3m1!1s0x89b63d7629212997:0x6209b55c8b32213e?hl=en-US", target: "_blank"
                     = link_to image_tag( "delaware_location.png", class: "location-image", id: "delaware_location" ), "https://www.google.com/maps/place/Foulkstone+Plaza/@39.8014918,-75.5289296,15z/data=!4m5!1m2!2m1!1s1407+Foulk+Road,+Suite+102,+Foulkstone+Plaza,+Wilmington,+DE+19803!3m1!1s0x89c6e3544c375b53:0x1d3c987fb33cae15", target: "_blank"
                     = link_to image_tag( "new_jersey_location.png", class: "location-image", id: "new_jersey_location" ), "https://www.google.com/maps/place/216+Haddon+Ave,+Westmont,+NJ+08108/@39.908894,-75.047669,16z/data=!4m2!3m1!1s0x89c6cbf0cb4c5f49:0x7dd3458f9bf305a6?hl=en-US", target: "_blank"
+                    = link_to image_tag( "west_palm_beach_location.png", class: "location-image", id: "west_palm_beach_location" ), "https://www.google.com/maps/place/500+South+Australian+Avenue+West+Palm+Beach,+Fl+33401/@26.709453,-80.063720,16z/data=!4m2!3m1!1s0x89c6cbf0cb4c5f49:0x7dd3458f9bf305a6?hl=en-US", target: "_blank"
+                    = link_to image_tag( "tampa_location.png", class: "location-image", id: "tampa_location" ), "https://www.google.com/maps/place/5100+West+Kennedy+Boulevard+Tampa,+Fl+33609/@27.944378, -82.529766,16z/data=!4m2!3m1!1s0x89c6cbf0cb4c5f49:0x7dd3458f9bf305a6?hl=en-US", target: "_blank"
                 .row.padless
                   / location selectors
                   .col-md-7.col-md-offset-5.padless
                     span.location-text LOCATION:
                     span.location-option#selected data-city-name="PHILADELPHIA" data-ad1="123 S Broad Street," data-ad2="Suite 1400" data-ad3="Philadelphia, PA 19109" data-file-name="philadelphia_location" PA
                     span.location-option data-city-name="NEW YORK" data-ad1="145 Huguenot Street," data-ad2="Suite 201" data-ad3="New Rochelle, NY 10801" data-file-name="new_york_location" NY
-                    span.location-option data-city-name="NEW YORK CITY" data-ad1="1 Huntington Quadrangle," data-ad2="2S09" data-ad3="Melville, NY 11747" data-file-name="long_island_location" NYC
+                    span.location-option data-city-name="LONG ISLAND" data-ad1="1 Huntington Quadrangle," data-ad2="2S09" data-ad3="Melville, NY 11747" data-file-name="long_island_location" <nobr>NY - LI</nobr>
                     span.location-option data-city-name="WASHINGTON, DC" data-ad1="312 Marshall Avenue," data-ad2="Suite 800" data-ad3="Laurel, MD 20707" data-file-name="dc_location" DC
                     span.location-option data-city-name="MARYLAND" data-ad1="312 Marshall Avenue," data-ad2="Suite 800" data-ad3="Laurel, MD 20707" data-file-name="maryland_location" MD
                     span.location-option data-city-name="VIRGINIA" data-ad1="722 E Market Street," data-ad2="Suite 203" data-ad3="Leesburg, VA 20176" data-file-name="virginia_location" VA
                     span.location-option data-city-name="DELAWARE" data-ad1="1407 Foulk Road," data-ad2="Suite 102" data-ad3="Wilmington, DE 19803" data-file-name="delaware_location" DE
                     span.location-option data-city-name="NEW JERSEY" data-ad1="216 Haddon Avenue," data-ad2="Suite 201" data-ad3="Westmont, NJ 08108" data-file-name="new_jersey_location" NJ
+                    span.location-option data-city-name="WEST PALM BEACH" data-ad1="500 South Australian Avenue," data-ad2="Suite 1000" data-ad3="West Palm Beach, FL 33401" data-file-name="west_palm_beach_location" WPB
+                    span.location-option data-city-name="TAMPA" data-ad1="5100 West Kennedy Boulevard," data-ad2="Suite 225" data-ad3="Tampa, FL 33609" data-file-name="tampa_location" TAMPA
 
 
 javascript:
