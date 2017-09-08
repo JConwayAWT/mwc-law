@@ -14,7 +14,7 @@
         = f.text_area :body, autofocus: true, placeholder: "Enter the full text of the alert that you would like to be displayed", required: true, rows: 4, class: "form-control"
       .form-group
         = f.label "Hours to display"
-        = f.select :hours_to_live, ((1..48).map {|i| [i, i]}), {selected: 12}, class: "form-control"
+        = f.select :hours_to_live, ((1..240).map {|i| [i, i]}), {selected: 12}, class: "form-control"
       .form-group
         = f.label "Administrator password"
         = f.password_field :password, required: true, class: "form-control"
