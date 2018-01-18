@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   match "/practice_areas", to: "application#practice_areas", via: :get
   match "/fannie_mae", to: "application#fannie_mae", via: :get
   match "/freddie_mac", to: "application#freddie_mac", via: :get
+  match "/cyqualitime", to: "application#cyqualitime", via: :get
   match "/delete_alerts", to: "alerts#delete_alerts", via: :post
 
   # Example of regular route:
