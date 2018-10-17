@@ -25,8 +25,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'spring',        group: :development
-gem 'therubyracer', platforms: :ruby
-gem 'tzinfo-data', platforms: [:mingw, :mswin]
+# gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'escape'
 gem 'slim'
 gem 'bootstrap-sass', '~> 3.2.0'
