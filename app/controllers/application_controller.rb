@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
   def index
   end
 
-  def attorneys
+  def shareholders
   end
 
   def offices
