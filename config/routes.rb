@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   root 'application#index'
 
   match "/shareholders", to: "application#shareholders", via: :get
+  # match "/legal_analysis", to: "application#legal_analysis", via: :get
   match "/offices", to: "application#offices", via: :get
   match "/the_firm", to: "application#the_firm", via: :get
   match "/practice_areas", to: "application#practice_areas", via: :get
