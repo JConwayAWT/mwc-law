@@ -1,8 +1,8 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails' #, '4.1.5'
+gem 'rails' ,'>6.0.0'  #    , '4.1.5'
 # Use sqlite3 as the database for Active Record
 gem 'pg', '<=0.21.0', group: :production
 gem 'sqlite3', group: :development
