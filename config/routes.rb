@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'posts/index'
   match "/lists/:mwc_file_name", to: "sale_lists#show", via: :get
 
   resources :employment_applications
