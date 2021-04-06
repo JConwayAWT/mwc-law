@@ -1,0 +1,17 @@
+<%= form_with(model: mwc_law) do |form| %>
+  <% if mwc_law.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(mwc_law.errors.count, "error") %> prohibited this mwc_law from being saved:</h2>
+
+      <ul>
+        <% mwc_law.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :applications
+  resources :mwc_laws
+  resources :bubbles
   get 'posts/index'
   match "/lists/:mwc_file_name", to: "sale_lists#show", via: :get
 

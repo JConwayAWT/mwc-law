@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Mwc Laws</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mwc_laws.each do |mwc_law| %>
+      <tr>
+        <td><%= link_to 'Show', mwc_law %></td>
+        <td><%= link_to 'Edit', edit_mwc_law_path(mwc_law) %></td>
+        <td><%= link_to 'Destroy', mwc_law, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mwc Law', new_mwc_law_path %>

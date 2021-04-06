@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
 
-gem 'bootstrap', '~> 5.0.0.beta2'
-gem 'sprockets', '~> 3.7.2'
-# gem 'ruby' '=2.7.0'
+#gem 'bootstrap', '~> 5.0.0.beta2'
+gem 'bootstrap-sass' #, '~> 3.4.1'
+gem 'sprockets' #, '~> 3.7.2'
+#gem 'ruby' '=2.7.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails' ,'=6.1.3'  #    , '4.1.5'
 # Use sqlite3 as the database for Active Record
@@ -32,7 +33,7 @@ gem 'spring',        group: :development
 gem 'tzinfo-data', platforms: [:mingw, :x64_mingw, :mswin]
 gem 'escape'
 gem 'slim'
-gem 'bootstrap-sass', '~> 3.2.0'
+
 gem 'autoprefixer-rails', '=9.1.0'
 gem 'rails_12factor', group: :production
 gem 'paperclip', '= 4.2.0'

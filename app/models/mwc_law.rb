@@ -1,0 +1,2 @@
+class MwcLaw < ApplicationRecord
+end
