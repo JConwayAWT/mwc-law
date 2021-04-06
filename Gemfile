@@ -6,7 +6,7 @@ gem 'bootstrap-sass' #, '~> 3.4.1'
 gem 'sprockets' #, '~> 3.7.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails' , '=6.1.3'  #   '~> 6.1' # , '4.1.5'
+gem 'rails' ,  '~> 6.1' # '=6.1.3'  #  , '4.1.5'
 # Use sqlite3 as the database for Active Record
 gem 'pg', '>=0.21.0', group: :production
 gem 'sqlite3', group: :development
@@ -40,7 +40,7 @@ gem 'rails_12factor', group: :production
 gem 'paperclip', '= 4.2.0'
 gem 'tinymce-rails'
 #gem 'marcel', '= 1.0.0'
-gem 'mimemagic' , '=0.3.5'
+#gem 'mimemagic' , '=0.3.5'
 # gem 'sudo'
 
 # Use ActiveModel has_secure_password
