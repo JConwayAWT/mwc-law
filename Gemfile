@@ -37,7 +37,7 @@ gem 'slim'
 
 gem 'autoprefixer-rails', '=9.1.0'
 gem 'rails_12factor', group: :production
-gem 'paperclip', '= 4.2.0'
+gem 'paperclip', '5.2.0'
 gem 'tinymce-rails'
 #gem 'marcel', '= 1.0.0'
 #gem 'mimemagic' , '=0.3.5'
