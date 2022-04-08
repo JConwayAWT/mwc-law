@@ -23,14 +23,10 @@
             span.glyphicon.glyphicon-play.list-indicator-caret
             span.list-item-link data-address="2121+Eisenhower+Avenue,+Suite+301,+Alexandria,+VA+22314-4698" Virginia
       .single-left-list-link
-        span.glyphicon.glyphicon-play.list-indicator-caret
-        .location-group New York
-        .clickable.location-of-group data-content-section-id="new-york"
-          span.glyphicon.glyphicon-play.list-indicator-caret
-          span.list-item-link data-address="145+Huguenot+St,+New+Rochelle,+NY+10801" New Rochelle
-        .clickable.location-of-group data-content-section-id="long-island"
-          span.glyphicon.glyphicon-play.list-indicator-caret
-          span.list-item-link data-address="1+Huntington+Quadrangle,+Melville,+NY+11747" Long Island
+        span
+          .clickable data-content-section-id="new-york"
+            span.glyphicon.glyphicon-play.list-indicator-caret
+            span.list-item-link data-address="10+Midland+Avenue,+Suite 205,+Port+Chester,+NY+10573" New York
       .single-left-list-link
         span
           .clickable data-content-section-id="district-of-columbia"
@@ -181,43 +177,7 @@
           .col-md-12
             = link_to "View Current Sales List", "/lists/VA.html", class: "btn btn-primary sales-list-button"
             <br><br>
-
-    #new-york.content-section
-      h3.single-item-title NEW ROCHELLE (NY)
-      .content-description
-        .row
-          .col-md-3
-            b Address <br>
-            | 145 Huguenot Street <br>
-            | Suite 210 <br>
-            | New Rochelle, NY 10801<br><br>
-
-          .col-md-3
-            | <b>Phone</b><br> 
-            | <a href="tel:+19146368900">914-636-8900</a><br><br>
-            | <b>Fax</b><br> 
-            | 914-636-8901<br><br>
-
-          .col-md-3
-            | <b>NY Email</b><br> 
-            | <a href="mailto:EscalatedNY@mwc-law.com;MSposato@mwc-law.com" target="_blank">Escalation</a><br>
-            | <a href="mailto:Ldeakoum@mwc-law.com" target="_blank">Foreclosure Matters</a><br>
-            | <a href="mailto:JKrapf@mwc-law.com;FChiu@mwc-law.com;Ldeakoum@mwc-law.com" target="_blank">Litigation Matters</a><br>
-            | <a href="mailto:MCohen@mwc-law.com" target="_blank">Bankruptcy Matters</a><br>
-            | <a href="mailto:MSposato@mwc-law.com" target="_blank">Evictions</a><br>
-            | <a href="mailto:NYPayoff@mwc-law.com" target="_blank">Payoff/Reinstatement</a><br>
-            | <a href="mailto:Bleboeuf@mwc-law.com;chussey@mwc-law.com" target="_blank">Sale Inquiries</a><br>
-            | <a href="mailto:AVeras@mwc-law.com;JHasbun@mwc-law.com" target="_blank">Loss Mitigation/Mediations</a><br>
-
-          .col-md-3
-            | <b>Managing Attorney</b><br>
-            | <a href="mailto:msposato@mwc-law.com" target="_blank">Melissa Sposato (Shareholder)</a>
-
-        .row
-          .col-md-12
-            = link_to "View Current Sales List", "/lists/NY.html", class: "btn btn-primary sales-list-button"
-            <br><br>
-
+ 
     #district-of-columbia.content-section
       h3.single-item-title DISTRICT OF COLUMBIA
       .content-description
@@ -324,15 +284,15 @@
             | <b>Managing Attorney</b><br>
             | <a href="mailto:RMcLain@mwc-law.com" target="_blank">Robert McLain (Shareholder)</a>
 					
-    #long-island.content-section
+    #new-york.content-section
       h3.single-item-title LONG ISLAND (NY)
       .content-description
         .row
           .col-md-3
             b Address <br>
-            | 1 Huntington Quadrangle <br>
-            | Suite 3C20<br>
-            | Melville, NY 11747<br><br>
+            | 10 Midland Avenue <br>
+            | Suite 205<br>
+            | Port Chester, NY 10573<br><br>
 
           .col-md-3
             | <b>Phone</b><br> 
