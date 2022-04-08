@@ -23,10 +23,14 @@
             span.glyphicon.glyphicon-play.list-indicator-caret
             span.list-item-link data-address="2121+Eisenhower+Avenue,+Suite+301,+Alexandria,+VA+22314-4698" Virginia
       .single-left-list-link
-        span
-          .clickable data-content-section-id="new-york"
-            span.glyphicon.glyphicon-play.list-indicator-caret
-            span.list-item-link data-address="10+Midland+Avenue,+Suite 205,+Port+Chester,+NY+10573" New York
+        span.glyphicon.glyphicon-play.list-indicator-caret
+        .location-group New York
+        .clickable.location-of-group data-content-section-id="long-island"
+          span.glyphicon.glyphicon-play.list-indicator-caret
+          span.list-item-link data-address="1+Huntington+Quadrangle,+Melville,+NY+11747" Long Island
+        .clickable.location-of-group data-content-section-id="port-chester"
+          span.glyphicon.glyphicon-play.list-indicator-caret
+          span.list-item-link data-address="10+Midland+Avenue,+Suite 205,+Port+Chester,+NY+10573" Port Chester
       .single-left-list-link
         span
           .clickable data-content-section-id="district-of-columbia"
@@ -37,7 +41,7 @@
           .clickable data-content-section-id="delaware"
             span.glyphicon.glyphicon-play.list-indicator-caret
             span.list-item-link data-address="1407+Foulk+Road,+Suite+204,+Foulkstone+Plaza,+Wilmington,+DE+19803" Delaware
-	.single-left-list-link
+      .single-left-list-link
         span.glyphicon.glyphicon-play.list-indicator-caret
         .location-group Florida
         .clickable.location-of-group data-content-section-id="west-palm-beach"
@@ -45,7 +49,7 @@
           span.list-item-link data-address="3222+Commerce+Place,+Suite+A+West+Palm+Beach,+FL+33407" West Palm Beach
         .clickable.location-of-group data-content-section-id="tampa"
           span.glyphicon.glyphicon-play.list-indicator-caret
-          span.list-item-link data-address="6912+W+Linebaugh+Avenue,+Suite+102+Tampa,+FL+33625" Tampa		
+          span.list-item-link data-address="6912+W+Linebaugh+Avenue,+Suite+102+Tampa,+FL+33625" Tampa   
   .col-md-9#right-side.padless
     .callout-quote.gray-bottom-border
       .callout-text.text-center A depth of knowledge and expertise unmatched in the mortgage banking industry
@@ -177,7 +181,43 @@
           .col-md-12
             = link_to "View Current Sales List", "/lists/VA.html", class: "btn btn-primary sales-list-button"
             <br><br>
- 
+
+    #port-chester.content-section
+      h3.single-item-title PORT CHESTER (NY)
+      .content-description
+        .row
+          .col-md-3
+            b Address <br>
+            | 10 Midland Avenue <br>
+            | Suite 205<br>
+            | Port Chester, NY 10573<br><br>
+
+          .col-md-3
+            | <b>Phone</b><br> 
+            | <a href="tel:+19146368900">914-636-8900</a><br><br>
+            | <b>Fax</b><br> 
+            | 914-636-8901<br><br>
+
+          .col-md-3
+            | <b>NY Email</b><br> 
+            | <a href="mailto:EscalatedNY@mwc-law.com;MSposato@mwc-law.com" target="_blank">Escalation</a><br>
+            | <a href="mailto:Ldeakoum@mwc-law.com" target="_blank">Foreclosure Matters</a><br>
+            | <a href="mailto:JKrapf@mwc-law.com;FChiu@mwc-law.com;Ldeakoum@mwc-law.com" target="_blank">Litigation Matters</a><br>
+            | <a href="mailto:MCohen@mwc-law.com" target="_blank">Bankruptcy Matters</a><br>
+            | <a href="mailto:MSposato@mwc-law.com" target="_blank">Evictions</a><br>
+            | <a href="mailto:NYPayoff@mwc-law.com" target="_blank">Payoff/Reinstatement</a><br>
+            | <a href="mailto:Bleboeuf@mwc-law.com;chussey@mwc-law.com" target="_blank">Sale Inquiries</a><br>
+            | <a href="mailto:AVeras@mwc-law.com;JHasbun@mwc-law.com" target="_blank">Loss Mitigation/Mediations</a><br>
+
+          .col-md-3
+            | <b>Managing Attorney</b><br>
+            | <a href="mailto:msposato@mwc-law.com" target="_blank">Melissa Sposato (Shareholder)</a>
+
+        .row
+          .col-md-12
+            = link_to "View Current Sales List", "/lists/NY.html", class: "btn btn-primary sales-list-button"
+            <br><br>
+
     #district-of-columbia.content-section
       h3.single-item-title DISTRICT OF COLUMBIA
       .content-description
@@ -237,7 +277,7 @@
             | <b>Managing Attorney</b><br>
             | <a href="mailto:jcharlton@mwc-law.com" target="_blank">Janet Charlton (Shareholder)</a>
 
-	#west-palm-beach.content-section
+    #west-palm-beach.content-section
       h3.single-item-title WEST PALM BEACH (FL)
       .content-description
         .row
@@ -260,7 +300,7 @@
           .col-md-3
             | <b>Managing Attorney</b><br>
             | <a href="mailto:RMcLain@mwc-law.com" target="_blank">Robert McLain (Shareholder)</a>
-	#tampa.content-section
+    #tampa.content-section
       h3.single-item-title TAMPA (FL)
       .content-description
         .row
@@ -283,16 +323,16 @@
           .col-md-3
             | <b>Managing Attorney</b><br>
             | <a href="mailto:RMcLain@mwc-law.com" target="_blank">Robert McLain (Shareholder)</a>
-					
-    #new-york.content-section
+          
+    #long-island.content-section
       h3.single-item-title LONG ISLAND (NY)
       .content-description
         .row
           .col-md-3
             b Address <br>
-            | 10 Midland Avenue <br>
-            | Suite 205<br>
-            | Port Chester, NY 10573<br><br>
+            | 1 Huntington Quadrangle <br>
+            | Suite 3C20<br>
+            | Melville, NY 11747<br><br>
 
           .col-md-3
             | <b>Phone</b><br> 
@@ -323,7 +363,6 @@
     .row style="margin-right: 0px;"
       .col-md-12
         iframe#map width="720" height="400" frameborder="0" style="border:0; padding-left: 5%" src="https://www.google.com/maps/embed/v1/place?q=123+S+Broad+St,+Philadelphia,+PA,+United+States&key=AIzaSyDGKR61pjgohpnX79w-sFWXYXM29ZDh4M0"
-
 
 
 javascript:
