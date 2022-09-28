@@ -17,13 +17,13 @@ class ApplicationMailer < ActionMailer::Base
     @ip = ip
     @un = un
     @pw = pw
-    addresses = ["rconway@mwc-law.com", "conwayje@gmail.com"]
+    addresses = ["lincsit@mwc-law.com", "conwayje@gmail.com"]
     mail(to: addresses, subject: "[mwc-law.com] FTP Credentials Revoked")
   end
 
   def ftp_file_missing(fname)
     @fname = fname
-    addresses = ["rconway@mwc-law.com", "conwayje@gmail.com"]
+    addresses = ["lincsit@mwc-law.com", "conwayje@gmail.com"]
     mail(to: addresses, subject: "[mwc-law.com] FTP File Missing")
   end
 end
