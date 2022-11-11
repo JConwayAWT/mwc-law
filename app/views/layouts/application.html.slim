@@ -83,7 +83,7 @@ html
                 .row.padless
                   .col-md-12.padless
                     p
-                    .disclaimer Portions of this site ©#{Time.now.year} by McCabe, Weisberg & Conway, LLC.  123 S. Broad Street, Suite 1400 - Philadelphia, PA 19109
+                    .disclaimer Portions of this site ©#{Time.now.year} by McCabe, Weisberg & Conway, LLC.  1420 Walnut Street, Suite 1501, Philadelphia, PA 19102
                     .disclaimer This site does not collect any information from viewers.  To view our privacy policy, #{link_to "click here", asset_path("privacy_policy.pdf"), target: "_blank", style: "color: white; text-decoration: underline"}.
                     br
               .col-md-4
@@ -93,14 +93,14 @@ html
                     .philadelphia-address-text 
                       span#philadelphia-header.city-name PHILADELPHIA
                       .address-line-one 
-                        | 123 S Broad Street,
+                        | 1420 Walnut Street,
                       .address-line-two 
-                        | Suite 1400
+                        | Suite 1501
                       .address-line-three 
-                        | Philadelphia, PA 19109
+                        | Philadelphia, PA 19102
                   / map itself
                   .col-md-7.padless.location-images
-                    = link_to image_tag( "philadelphia_location.png", class: "location-image displaying", id: "philadelphia_location" ), "https://www.google.com/maps/place/123+S+Broad+St,+Philadelphia,+PA+19109/@39.95009,-75.164017,16z/data=!4m2!3m1!1s0x89c6c62f8f06c421:0xffd964938939d8d?hl=en-US", target: "_blank"
+                    = link_to image_tag( "philadelphia_location2.png", class: "location-image displaying", id: "philadelphia_location2" ), "https://www.google.com/maps/place/1420+Walnut+St,+Philadelphia,+PA+19102/@39.9492642,-75.1654596,17z/data=!3m1!4b1!4m5!3m4!1s0x89c6c6255756e4d9:0x6ced9e00b1275f6c!8m2!3d39.9492642!4d-75.1654596?hl=en-US", target: "_blank"
                     = link_to image_tag( "port_chester_location.png", class: "location-image", id: "port_chester_location" ), "https://www.google.com/maps/place/10+Midland+Ave+%23205,+Port+Chester,+NY+10573/@40.9961389,-73.6681345,17z/data=!3m1!4b1!4m5!3m4!1s0x89c297454ee73b07:0x9a347f45ab932919!8m2!3d40.9961349!4d-73.6659458?hl=en", target: "_blank" 
                     = link_to image_tag( "long_island_location.png", class: "location-image", id: "long_island_location" ), "https://www.google.com/maps/place/1+Huntington+Quadrangle,+Melville,+NY+11747/@40.77303,-73.420608,16z/data=!4m2!3m1!1s0x89e82a35a87e2693:0xfcc10d82df65df6?hl=en-US", target: "_blank"
                     // note that maryland and dc share the same office basically
@@ -115,7 +115,7 @@ html
                   / location selectors
                   .col-md-7.col-md-offset-5.padless
                     span.location-text LOCATION:
-                    span.location-option#selected data-city-name="PHILADELPHIA" data-ad1="123 S Broad Street," data-ad2="Suite 1400" data-ad3="Philadelphia, PA 19109" data-file-name="philadelphia_location" PA
+                    span.location-option#selected data-city-name="PHILADELPHIA" data-ad1="1420 Walnut Street," data-ad2="Suite 1501" data-ad3="Philadelphia, PA 19102" data-file-name="philadelphia_location2" PA
                     span.location-option data-city-name="LONG ISLAND" data-ad1="1 Huntington Quadrangle," data-ad2="Suite 4N25" data-ad3="Melville, NY 11747" data-file-name="long_island_location" <nobr>NY</nobr>
                     span.location-option data-city-name="PORT CHESTER" data-ad1="10 Midland Ave," data-ad2="Suite 205" data-ad3="Port Chester, NY 10573" data-file-name="port_chester_location" NY - PC
                     span.location-option data-city-name="WASHINGTON, DC" data-ad1="312 Marshall Avenue," data-ad2="Suite 800" data-ad3="Laurel, MD 20707" data-file-name="dc_location" DC
