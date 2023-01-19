@@ -76,7 +76,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.1.8)
+    concurrent-ruby (1.1.10)
     crass (1.0.6)
     erubi (1.10.0)
     escape (0.0.4)
@@ -84,9 +84,9 @@ GEM
     ffi (1.15.0)
     ffi (1.15.0-x64-mingw32)
     ffi (1.15.0-x86-mingw32)
-    globalid (0.4.2)
-      activesupport (>= 4.2.0)
-    i18n (1.8.10)
+    globalid (1.0.1)
+      activesupport (>= 5.0)
+    i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     jbuilder (2.11.2)
       activesupport (>= 5.0.0)
@@ -110,7 +110,7 @@ GEM
     mini_portile2 (2.5.0)
     mini_racer (0.3.1)
       libv8 (~> 8.4.255)
-    minitest (5.14.4)
+    minitest (5.17.0)
     nio4r (2.5.7)
     nokogiri (1.11.2)
       mini_portile2 (~> 2.5.0)
@@ -196,7 +196,7 @@ GEM
     tilt (2.0.10)
     tinymce-rails (5.7.1)
       railties (>= 3.1.1)
-    tzinfo (2.0.4)
+    tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     tzinfo-data (1.2021.1)
       tzinfo (>= 1.0.0)
@@ -205,7 +205,7 @@ GEM
     websocket-driver (0.7.3)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
-    zeitwerk (2.4.2)
+    zeitwerk (2.6.6)
 
 PLATFORMS
   ruby
