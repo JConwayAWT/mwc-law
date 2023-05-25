@@ -10084,21 +10084,26 @@ h2.home-page {
 }
 
 /* line 908, app/assets/stylesheets/application.scss */
+#footer .container-fluid #USFN_logo {
+  margin-right: 20px;
+}
+
+/* line 911, app/assets/stylesheets/application.scss */
 #footer .container-fluid #WBE_Seal_REVERSE {
   margin-right: 20px;
 }
 
-/* line 914, app/assets/stylesheets/application.scss */
+/* line 917, app/assets/stylesheets/application.scss */
 .mwc-logo-image-file {
   height: 102px;
 }
 
-/* line 916, app/assets/stylesheets/application.scss */
+/* line 919, app/assets/stylesheets/application.scss */
 .mwc-logo-image-file:hover {
   text-decoration: none;
 }
 
-/* line 921, app/assets/stylesheets/application.scss */
+/* line 924, app/assets/stylesheets/application.scss */
 .underline-text {
   text-align: center;
   color: white;
@@ -10107,59 +10112,59 @@ h2.home-page {
   margin-bottom: 20px;
 }
 
-/* line 929, app/assets/stylesheets/application.scss */
+/* line 932, app/assets/stylesheets/application.scss */
 #navbar-link-margin {
   margin-top: 84px;
 }
 
-/* line 933, app/assets/stylesheets/application.scss */
+/* line 936, app/assets/stylesheets/application.scss */
 .single-header-link {
   color: white;
   font-family: 'Raleway', sans-serif;
 }
 
-/* line 935, app/assets/stylesheets/application.scss */
+/* line 938, app/assets/stylesheets/application.scss */
 .single-header-link:visited {
   color: white;
 }
 
 @media (max-width: 900px) {
-  /* line 933, app/assets/stylesheets/application.scss */
+  /* line 936, app/assets/stylesheets/application.scss */
   .single-header-link {
     font-size: 10px;
   }
 }
 
 @media (min-width: 900px) {
-  /* line 933, app/assets/stylesheets/application.scss */
+  /* line 936, app/assets/stylesheets/application.scss */
   .single-header-link {
     font-size: 12px;
   }
 }
 
 @media (min-width: 1139px) {
-  /* line 933, app/assets/stylesheets/application.scss */
+  /* line 936, app/assets/stylesheets/application.scss */
   .single-header-link {
     font-size: 14px;
   }
 }
 
-/* line 950, app/assets/stylesheets/application.scss */
+/* line 953, app/assets/stylesheets/application.scss */
 .mini-navbar {
   min-height: inherit;
 }
 
-/* line 956, app/assets/stylesheets/application.scss */
+/* line 959, app/assets/stylesheets/application.scss */
 .general-wrapper {
   padding-left: 250px;
 }
 
-/* line 960, app/assets/stylesheets/application.scss */
+/* line 963, app/assets/stylesheets/application.scss */
 #wrapper.toggled {
   padding-left: 250px;
 }
 
-/* line 964, app/assets/stylesheets/application.scss */
+/* line 967, app/assets/stylesheets/application.scss */
 #sidebar-wrapper {
   z-index: 1000;
   position: fixed;
@@ -10172,25 +10177,25 @@ h2.home-page {
   transition: all 0.5s ease;
 }
 
-/* line 979, app/assets/stylesheets/application.scss */
+/* line 982, app/assets/stylesheets/application.scss */
 #wrapper.toggled #sidebar-wrapper {
   width: 250px;
 }
 
-/* line 983, app/assets/stylesheets/application.scss */
+/* line 986, app/assets/stylesheets/application.scss */
 #page-content-wrapper {
   width: 100%;
   padding: 15px;
 }
 
-/* line 988, app/assets/stylesheets/application.scss */
+/* line 991, app/assets/stylesheets/application.scss */
 #wrapper.toggled #page-content-wrapper {
   position: absolute;
   margin-right: -250px;
 }
 
 /* Sidebar Styles */
-/* line 995, app/assets/stylesheets/application.scss */
+/* line 998, app/assets/stylesheets/application.scss */
 .sidebar-nav {
   position: absolute;
   top: 0;
@@ -10200,100 +10205,100 @@ h2.home-page {
   list-style: none;
 }
 
-/* line 1004, app/assets/stylesheets/application.scss */
+/* line 1007, app/assets/stylesheets/application.scss */
 .sidebar-nav li {
   text-indent: 20px;
   line-height: 30px;
 }
 
-/* line 1009, app/assets/stylesheets/application.scss */
+/* line 1012, app/assets/stylesheets/application.scss */
 .sidebar-nav li a {
   display: block;
   text-decoration: none;
   color: #fff;
 }
 
-/* line 1015, app/assets/stylesheets/application.scss */
+/* line 1018, app/assets/stylesheets/application.scss */
 .first-sidebar-child {
   margin-top: 35px;
 }
 
-/* line 1019, app/assets/stylesheets/application.scss */
+/* line 1022, app/assets/stylesheets/application.scss */
 .sidebar-nav li a:hover {
   text-decoration: none;
   color: #999999;
   background-color: rgba(230, 230, 230, 0.2) !important;
 }
 
-/* line 1025, app/assets/stylesheets/application.scss */
+/* line 1028, app/assets/stylesheets/application.scss */
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
   text-decoration: none;
 }
 
-/* line 1030, app/assets/stylesheets/application.scss */
+/* line 1033, app/assets/stylesheets/application.scss */
 .sidebar-nav > .sidebar-brand {
   height: 65px;
   font-size: 18px;
   line-height: 60px;
 }
 
-/* line 1036, app/assets/stylesheets/application.scss */
+/* line 1039, app/assets/stylesheets/application.scss */
 .sidebar-nav > .sidebar-brand a {
   color: #999999;
 }
 
-/* line 1040, app/assets/stylesheets/application.scss */
+/* line 1043, app/assets/stylesheets/application.scss */
 .sidebar-nav > .sidebar-brand a:hover {
   color: #fff;
   background: none;
 }
 
-/* line 1045, app/assets/stylesheets/application.scss */
+/* line 1048, app/assets/stylesheets/application.scss */
 #wrapper {
   padding-left: 250px;
 }
 
-/* line 1049, app/assets/stylesheets/application.scss */
+/* line 1052, app/assets/stylesheets/application.scss */
 #wrapper.toggled {
   padding-left: 0;
 }
 
-/* line 1053, app/assets/stylesheets/application.scss */
+/* line 1056, app/assets/stylesheets/application.scss */
 #sidebar-wrapper {
   width: 250px;
 }
 
-/* line 1057, app/assets/stylesheets/application.scss */
+/* line 1060, app/assets/stylesheets/application.scss */
 #wrapper.toggled #sidebar-wrapper {
   width: 0;
 }
 
-/* line 1061, app/assets/stylesheets/application.scss */
+/* line 1064, app/assets/stylesheets/application.scss */
 #page-content-wrapper {
   padding: 20px;
 }
 
-/* line 1065, app/assets/stylesheets/application.scss */
+/* line 1068, app/assets/stylesheets/application.scss */
 #wrapper.toggled #page-content-wrapper {
   position: relative;
   margin-right: 0;
 }
 
-/* line 1072, app/assets/stylesheets/application.scss */
+/* line 1075, app/assets/stylesheets/application.scss */
 .fancy {
   line-height: 0.15;
   text-align: center;
   margin-bottom: 35px;
 }
 
-/* line 1077, app/assets/stylesheets/application.scss */
+/* line 1080, app/assets/stylesheets/application.scss */
 .fancy span {
   display: inline-block;
   position: relative;
 }
 
-/* line 1081, app/assets/stylesheets/application.scss */
+/* line 1084, app/assets/stylesheets/application.scss */
 .fancy span:before,
 .fancy span:after {
   content: "";
@@ -10305,49 +10310,49 @@ h2.home-page {
   width: 600px;
 }
 
-/* line 1091, app/assets/stylesheets/application.scss */
+/* line 1094, app/assets/stylesheets/application.scss */
 .fancy span:before {
   right: 100%;
   margin-right: 15px;
 }
 
-/* line 1095, app/assets/stylesheets/application.scss */
+/* line 1098, app/assets/stylesheets/application.scss */
 .fancy span:after {
   left: 100%;
   margin-left: 15px;
 }
 
 /* columns of same height styles */
-/* line 1103, app/assets/stylesheets/application.scss */
+/* line 1106, app/assets/stylesheets/application.scss */
 .container-xs-height {
   display: table;
   padding-left: 0px;
   padding-right: 0px;
 }
 
-/* line 1108, app/assets/stylesheets/application.scss */
+/* line 1111, app/assets/stylesheets/application.scss */
 .row-xs-height {
   display: table-row;
 }
 
-/* line 1111, app/assets/stylesheets/application.scss */
+/* line 1114, app/assets/stylesheets/application.scss */
 .col-xs-height {
   display: table-cell;
   float: none;
 }
 
 @media (min-width: 768px) {
-  /* line 1116, app/assets/stylesheets/application.scss */
+  /* line 1119, app/assets/stylesheets/application.scss */
   .container-sm-height {
     display: table;
     padding-left: 0px;
     padding-right: 0px;
   }
-  /* line 1121, app/assets/stylesheets/application.scss */
+  /* line 1124, app/assets/stylesheets/application.scss */
   .row-sm-height {
     display: table-row;
   }
-  /* line 1124, app/assets/stylesheets/application.scss */
+  /* line 1127, app/assets/stylesheets/application.scss */
   .col-sm-height {
     display: table-cell;
     float: none;
@@ -10355,17 +10360,17 @@ h2.home-page {
 }
 
 @media (min-width: 992px) {
-  /* line 1130, app/assets/stylesheets/application.scss */
+  /* line 1133, app/assets/stylesheets/application.scss */
   .container-md-height {
     display: table;
     padding-left: 0px;
     padding-right: 0px;
   }
-  /* line 1135, app/assets/stylesheets/application.scss */
+  /* line 1138, app/assets/stylesheets/application.scss */
   .row-md-height {
     display: table-row;
   }
-  /* line 1138, app/assets/stylesheets/application.scss */
+  /* line 1141, app/assets/stylesheets/application.scss */
   .col-md-height {
     display: table-cell;
     float: none;
@@ -10373,17 +10378,17 @@ h2.home-page {
 }
 
 @media (min-width: 1200px) {
-  /* line 1144, app/assets/stylesheets/application.scss */
+  /* line 1147, app/assets/stylesheets/application.scss */
   .container-lg-height {
     display: table;
     padding-left: 0px;
     padding-right: 0px;
   }
-  /* line 1149, app/assets/stylesheets/application.scss */
+  /* line 1152, app/assets/stylesheets/application.scss */
   .row-lg-height {
     display: table-row;
   }
-  /* line 1152, app/assets/stylesheets/application.scss */
+  /* line 1155, app/assets/stylesheets/application.scss */
   .col-lg-height {
     display: table-cell;
     float: none;
@@ -10391,22 +10396,22 @@ h2.home-page {
 }
 
 /* vertical alignment styles */
-/* line 1158, app/assets/stylesheets/application.scss */
+/* line 1161, app/assets/stylesheets/application.scss */
 .col-top {
   vertical-align: top;
 }
 
-/* line 1161, app/assets/stylesheets/application.scss */
+/* line 1164, app/assets/stylesheets/application.scss */
 .col-middle {
   vertical-align: middle;
 }
 
-/* line 1164, app/assets/stylesheets/application.scss */
+/* line 1167, app/assets/stylesheets/application.scss */
 .col-bottom {
   vertical-align: bottom;
 }
 
-/* line 1168, app/assets/stylesheets/application.scss */
+/* line 1171, app/assets/stylesheets/application.scss */
 .learn-more-button {
   padding: 12px 29px;
   font-size: 19px;
@@ -10415,24 +10420,24 @@ h2.home-page {
   border-color: #bbbbbb;
 }
 
-/* line 1174, app/assets/stylesheets/application.scss */
+/* line 1177, app/assets/stylesheets/application.scss */
 .learn-more-button .learn-more-link {
   color: black;
   text-decoration: none;
 }
 
-/* line 1180, app/assets/stylesheets/application.scss */
+/* line 1183, app/assets/stylesheets/application.scss */
 .carousel-fade .carousel-inner .item {
   opacity: 0;
   transition-property: opacity;
 }
 
-/* line 1185, app/assets/stylesheets/application.scss */
+/* line 1188, app/assets/stylesheets/application.scss */
 .carousel-fade .carousel-inner .active {
   opacity: 1;
 }
 
-/* line 1189, app/assets/stylesheets/application.scss */
+/* line 1192, app/assets/stylesheets/application.scss */
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
   left: 0;
@@ -10440,13 +10445,13 @@ h2.home-page {
   z-index: 1;
 }
 
-/* line 1196, app/assets/stylesheets/application.scss */
+/* line 1199, app/assets/stylesheets/application.scss */
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
   opacity: 1;
 }
 
-/* line 1201, app/assets/stylesheets/application.scss */
+/* line 1204, app/assets/stylesheets/application.scss */
 .carousel-fade .carousel-control {
   z-index: 2;
 }
@@ -10456,21 +10461,21 @@ h2.home-page {
   Need to override the 3.3 new styles for modern browsers & apply opacity
 */
 @media all and (transform-3d), (-webkit-transform-3d) {
-  /* line 1210, app/assets/stylesheets/application.scss */
+  /* line 1213, app/assets/stylesheets/application.scss */
   .carousel-fade .carousel-inner > .item.next,
 .carousel-fade .carousel-inner > .item.active.right {
     opacity: 0;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-  /* line 1216, app/assets/stylesheets/application.scss */
+  /* line 1219, app/assets/stylesheets/application.scss */
   .carousel-fade .carousel-inner > .item.prev,
 .carousel-fade .carousel-inner > .item.active.left {
     opacity: 0;
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
-  /* line 1222, app/assets/stylesheets/application.scss */
+  /* line 1225, app/assets/stylesheets/application.scss */
   .carousel-fade .carousel-inner > .item.next.left,
 .carousel-fade .carousel-inner > .item.prev.right,
 .carousel-fade .carousel-inner > .item.active {
@@ -10480,13 +10485,13 @@ h2.home-page {
   }
 }
 
-/* line 1231, app/assets/stylesheets/application.scss */
+/* line 1234, app/assets/stylesheets/application.scss */
 .sales-list-button {
   color: white !important;
   margin-right: 20px;
 }
 
-/* line 1234, app/assets/stylesheets/application.scss */
+/* line 1237, app/assets/stylesheets/application.scss */
 .sales-list-button:hover {
   background-color: #3071A9 !important;
 }
