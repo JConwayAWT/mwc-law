@@ -25,7 +25,7 @@ class MwcLawsController < ApplicationController
 
     respond_to do |format|
       if @mwc_law.save
-        format.html { redirect_to @mwc_law, notice: "Mwc law was successfully created." }
+        format.html { redirect_to mwc_law_url(@mwc_law), notice: "Mwc law was successfully created." }
         format.json { render :show, status: :created, location: @mwc_law }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class MwcLawsController < ApplicationController
   def update
     respond_to do |format|
       if @mwc_law.update(mwc_law_params)
-        format.html { redirect_to @mwc_law, notice: "Mwc law was successfully updated." }
+        format.html { redirect_to mwc_law_url(@mwc_law), notice: "Mwc law was successfully updated." }
         format.json { render :show, status: :ok, location: @mwc_law }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -50,6 +50,7 @@ class MwcLawsController < ApplicationController
   # DELETE /mwc_laws/1 or /mwc_laws/1.json
   def destroy
     @mwc_law.destroy
+
     respond_to do |format|
       format.html { redirect_to mwc_laws_url, notice: "Mwc law was successfully destroyed." }
       format.json { head :no_content }
