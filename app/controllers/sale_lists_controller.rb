@@ -10,12 +10,12 @@ class SaleListsController < ApplicationController
   # GET /sale_lists/1
   # GET /sale_lists/1.json
   def show
-    render layout: false
+    redirect_to "/"
   end
 
   # GET /sale_lists/new
   def new
-    redirect_to "/"
+    @sale_list = SaleList.new
   end
 
   # GET /sale_lists/1/edit
@@ -26,7 +26,17 @@ class SaleListsController < ApplicationController
   # POST /sale_lists
   # POST /sale_lists.json
   def create
-    redirect_to "/"
+    @sale_list = SaleList.new(sale_list_params)
+
+    respond_to do |format|
+      if @sale_list.save
+        format.html { redirect_to "/", notice: 'Sale_list was successfully created.' }
+        format.json { render :show, status: :created, location: @sale_list }
+      else
+        format.html { render :new }
+        format.json { render json: @sale_list.errors, status: :unprocessable_entity }
+      end
+    end
   end
 
   # PATCH/PUT /sale_lists/1
