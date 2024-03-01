@@ -44,6 +44,16 @@
             span.list-item-link Jamie C. Krapf
       .single-left-list-link
         span
+          .clickable data-content-section-id="jose-hasbun"
+            span.glyphicon.glyphicon-play.list-indicator-caret 
+            span.list-item-link Jose O. Hasbun
+      .single-left-list-link
+        span
+          .clickable data-content-section-id="joseph-foley"
+            span.glyphicon.glyphicon-play.list-indicator-caret 
+            span.list-item-link Joseph Foley
+      .single-left-list-link
+        span
           .clickable data-content-section-id="founding-shareholders"
             span.glyphicon.glyphicon-play.list-indicator-caret 
             span.list-item-link Founding Shareholders
@@ -161,6 +171,28 @@
         = link_to image_tag( "Jamie.png", id: "Jamie", height: "20%", width: "20%", class: "association-image"), "mailto:info@mwc-law.com?subject=Contact Attorney Jamie C. Krapf", target: "_blank"
         <br><br>
         = mail_to("info@mwc-law.com", "Contact Jamie C. Krapf", :subject => "Contact Attorney Jamie C. Krapf")
+
+    #jose-hasbun.content-section
+      h3.single-item-title JOSE O. HASBUN
+      .content-description
+        p <span class="paragraph-start">JOSE O. HASBUN,</span> Shareholder, received his Juris Doctor from Hofstra University School of Law in 2010, and his Bachelor’s and Master’s degrees from St. John’s University. During law school, he worked as an advocate at the Unemployment Action Center (UAC), as well as serving as a member of its executive board. In addition to being an attorney at McCabe, Weisberg &amp; Conway, Jose O. Hasbun is an associate professor in the Law &amp; Police Science Department of John Jay College. He is a member of the New York City Bar Association, The New York Bar Association, The Queens County Bar Association and the American Bar Association.  Mr. Hasbun is licensed to practice law in State of New York.
+        
+        p
+        p
+        = link_to image_tag( "Jose.png", id: "Jose", height: "20%", width: "20%", class: "association-image"), "mailto:info@mwc-law.com?subject=Contact Attorney Jose O. Hasbun", target: "_blank"
+        <br><br>
+        = mail_to("info@mwc-law.com", "Contact Jose O. Hasbun", :subject => "Contact Attorney Jose O. Hasbun")
+
+    #joseph-foley.content-section
+      h3.single-item-title JOSEPH FOLEY
+      .content-description
+        p <span class="paragraph-start">JOSEPH FOLEY,</span> Shareholder, received his Juris Doctor from the Thomas R. Kline School of Law at Drexel University in 2012 and his Bachelor of Science degree in Chemistry from Bucknell University in 2009. Mr. Foley initially joined McCabe, Weisberg &amp; Conway during law school when he worked in the foreclosure litigation department as a law clerk. His areas of practice focus on foreclosure litigation, ejectment litigation, and title-related litigation.  Mr. Foley is licensed to practice law in the State of New Jersey and the Commonwealth of Pennsylvania.
+        
+        p
+        p
+        = link_to image_tag( "Joseph.png", id: "Joseph", height: "20%", width: "20%", class: "association-image"), "mailto:info@mwc-law.com?subject=Contact Attorney Joseph C. Foley", target: "_blank"
+        <br><br>
+        = mail_to("info@mwc-law.com", "Contact Joseph C. Foley", :subject => "Contact Attorney Joseph C. Foley")
         
     #founding-shareholders.content-section
       h3.single-item-title TERRENCE J. McCABE (Retired)
